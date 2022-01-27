@@ -1,0 +1,21 @@
+/*Ajustes del Main*/
+
+.main {
+    @media only screen and (min-device-width : 320px) and (max-device-width : 1024px) {
+		* {
+			color: darkred;
+			font-weight: bolder;
+		}
+		p {
+			color: darkred;
+		}
+        
+	}
+    display: inline-block;
+    text-align: center;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 0.9em;
+    color: grey;
+}

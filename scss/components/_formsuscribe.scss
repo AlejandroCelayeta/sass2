@@ -1,0 +1,12 @@
+/* Formulario de Suscripción */
+
+.contenedor-suscribe {
+	display: inline-block;
+}
+.form-control {
+	&:focus {
+		background-color: goldenrod;
+		font-weight: bolder;
+	}
+}
+

@@ -1,0 +1,112 @@
+<<<<<<< HEAD
+/* Menú hamburguesa */
+
+.dropdown {
+    z-index: 2;
+    display: block;
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+    padding: 20px;
+    border: white;
+    background: white;
+}
+
+.main {
+    display: inline-block;
+    text-align: center;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 0.9em;
+}
+
+.btn {
+    display: flex;
+    box-sizing: border-box;
+    margin: 1%;
+    padding: 0%;
+    text-align: left;
+    color: rgb(252, 249, 249);
+    cursor: hand;
+
+    &:hover {
+        transition: 2.3s;
+        transform: rotate(360deg);
+    }
+}
+
+.btn-secondary {
+    background-color: white;
+    border: none;
+    padding-top: 0.1rem;
+    padding-right: 0.6rem;
+
+    &:focus {
+        color: white;
+        text-decoration-style: none;
+        background-color: #f8f9fa;
+        border-color: #f8f9fa;
+        box-shadow: 0 0 0 0.25rem #f8f9fa;
+    }
+}
+
+li {
+    &::before {
+        content: "+";
+        position: relative;
+        left: -1px;
+    }
+}
+=======
+/* Menú Hamburguesa */
+
+
+.dropdown {
+	display: block;
+	margin-right: 10px;
+	width: 50px;
+	height: 50px;
+	padding: 20px;
+	border: white;
+	background: white;
+	li {
+		&::before {
+			content: ">";
+			position: absolute;
+			left: -1px;
+		}
+	}
+
+	.btn {
+		display: flex;
+		box-sizing: border-box;
+		margin: 1%;
+		padding: 0%;
+		text-align: left;
+		color: rgb(252, 249, 249);
+		cursor: hand;
+	}
+
+	.btn-secondary {
+		background-color: white;
+		border: none;
+		padding-top: 0.1rem;
+		padding-right: 0.6rem;
+
+		&:focus {
+			color: white;
+			text-decoration-style: none;
+			background-color: #f8f9fa;
+			border-color: #f8f9fa;
+			box-shadow: 0 0 0 0.25rem #f8f9fa;
+		}
+
+		&:hover {
+			transition: 2.3s;
+			transform: rotate(360deg);
+		}
+	}
+}
+
+>>>>>>> otcsass

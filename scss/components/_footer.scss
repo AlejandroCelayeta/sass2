@@ -1,0 +1,141 @@
+/* Footer */
+<<<<<<< HEAD
+.card-body {
+    margin-bottom: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+h2 {
+    font-size: 1em;
+    font-weight: bold;
+    color: grey;
+    text-align: center;
+    padding-top: 3em;
+    padding-bottom: 0.5%;
+    margin-top: 2.5em;
+
+    &:hover {
+        transform: scale(1.1);
+        color: crimson;
+    }
+}
+
+.linkedin {
+    display: block;
+    margin-left: 0.5em;
+    margin-bottom: 0.6em;
+    padding-top: 0.2em;
+
+    &:hover {
+        transition: 2.3s;
+        transform: rotate(360deg);
+    }
+}
+
+.facebook {
+    display: block;
+    margin-left: 0.5em;
+    margin-bottom: 0.2em;
+    padding: 0.2em;
+
+    &:hover {
+        transition: 2.3s;
+        transform: rotate(360deg);
+    }
+}
+
+.card {
+    border: 0px;
+    margin-top: 7em;
+    max-width: 300px;
+}
+
+.card-title {
+    font-size: 0.8em;
+    font-weight: bold;
+    color: grey;
+    text-align: left;
+}
+
+.parrafo-copy {
+    font-size: 0.5em;
+    font-weight: bold;
+    color: grey;
+    text-align: center;
+    padding-bottom: 0.1%;
+}
+=======
+/*Propiedades del footer*/
+
+.footer {
+	display: block;
+}
+.card-title{
+	@media only screen and (min-device-width : 320px) and (max-device-width : 767px) {
+		color: darkred;
+		}
+}
+
+.card-body {
+	margin-bottom: 0.5em;
+	padding-bottom: 0.5em;
+}
+
+
+h3 {
+	font-size: 1em;
+	font-weight: bold;
+	color: grey;
+	text-align: left;
+	padding-top: 3em;
+	padding-bottom: 0.5%;
+	margin-top: 2.5em;
+
+	&:hover {
+		transform: scale(1.1);
+		color: crimson;
+	}
+}
+
+.linkedin {
+	display: block;
+	margin-left: 0.5em;
+	margin-bottom: 0.6em;
+	padding-top: 0.2em;
+
+	&:hover {
+		transition: 2.3s;
+		transform: rotate(360deg);
+	}
+}
+
+.facebook {
+	display: block;
+	margin-left: 0.5em;
+	margin-bottom: 0.2em;
+	padding: 0.2em;
+
+	&:hover {
+		transition: 2.3s;
+		transform: rotate(360deg);
+	}
+}
+
+.card {
+	border: 0px;
+	margin-top: 7em;
+	max-width: 300px;
+}
+
+
+	.parrafo-copy {
+		@media only screen and (min-device-width : 320px) and (max-device-width : 767px) {
+			color: darkred;
+			}
+		font-size: 0.7em;
+		font-weight: bold;
+		color: grey;
+		text-align: center;
+		padding-bottom: 0.1%;
+	}
+>>>>>>> otcsass

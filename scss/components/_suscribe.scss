@@ -1,0 +1,32 @@
+/* Formulario de Suscripción y efecto */
+
+.contenedor-suscribe {
+	display: inline-block;
+
+	@media only screen and (min-device-width : 320px) and (max-device-width : 767px) {
+		.input-group-text {
+			color: darkred;
+			font-size: 2.3em;
+			font-weight: bolder;
+		}
+
+	}
+
+	.form-control,
+	.visually-hidden {
+		&:focus {
+			background-color: goldenrod;
+			font-weight: bolder;
+		}
+
+	}
+}
+
+.btn {
+	margin-top: 1em;
+
+	&:hover {
+		transition: 2.3s;
+		transform: rotate(360deg);
+	}
+}
