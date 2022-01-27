@@ -75,30 +75,46 @@
 
             <p class="text-centered mx-auto" align-items-center style="width: 60%"> Algunos de nuestros trabajos</p>
 
-            <div class="grid" class="portfolio">
-                <div>
-                    <img class="ceti" src="../images/cetirizina.png" alt="cetirizina">
-                    <Figcaption>Cetirizina Apotex</Figcaption>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
                 </div>
-                <div>
-                    <img class="lope" src="../images/loperamida.png" alt="loperamida">
-                    <figcaption>Loperamida Apotex</figcaption>
+                
+                <div class="d-flex" >
+                <div class="carousel-inner w-100 justify-content-center">
+                    <div class="carousel-item active">
+                        <img src="../images/cetirizina.png" alt="Cetirizina" class="d-block w-50">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/loperamida.png" alt="loperamida" class="d-block w-50">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/naproxeno.png" alt="naproxeno" class="d-block w-50">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/paracetamol.png" alt="paracetamol" class="d-block w-50">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/vitaminab2.png" alt="vitamina b 2" class="d-block w-50">
+                    </div>
                 </div>
-                <div>
-                    <img class="napro" src="../images/naproxeno.png" alt="naproxeno">
-                    <Figcaption>Naproxeno Apotex</Figcaption>
                 </div>
 
-                <div>
-                    <img class="para" src="../images/paracetamol.png" alt="paracetamol">
-                    <Figcaption>
-                        Paracetamol Apotex
-                    </Figcaption>
-                </div>
-                <div>
-                    <img class="vita" src="../images/vitaminab2.png" alt="vitamina b 2">
-                    <figcaption>Vitamina B2 Apotex</figcaption>
-                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </section>
         <!--Fin de la sección central-->
@@ -106,39 +122,36 @@
     </main>
     <!--Inicio del Footer-->
     <footer>
-        <div class="card mb-3">
-            <div class="col-md-8">
-                <div class="card-body">
-                    <h3 class="card-title" class="fs-5">Seguinos en</h3>
-                </div>
+        <div class="footer-redes">
+
+            <div class="f-head">
+                <h3>Seguinos en</h3>
             </div>
-            <div class="row g-0">
-                <div class="col-md-4">
-                    <a href="https://www.linkedin.com/" target=blank>
-                        <img class="linkedin" src="../images/linkedin.png" class="img-fluid rounded-start"
-                            alt="logo linkedin">
-                    </a>
-                    <a href="https://www.facebook.com/" target=blank>
-                        <img class="facebook" src="../images/logoface.png" class="img-fluid rounded-start"
-                            alt="logo facebook">
-                    </a>
-                </div>
+
+            <div class="fb">
+                <a href="https://www.facebook.com/" target=blank>
+                    <img class="facebook" src="../images/logoface.png" class="img-fluid rounded-start"
+                        alt="logo facebook">
+                </a>
+            </div>
+
+            <div class="ln">
+                <a href="https://www.linkedin.com/" target=blank>
+                    <img class="linkedin" src="../images/linkedin.png" class="img-fluid rounded-start"
+                        alt="logo linkedin">
+                </a></div>
+
+            <div class="copy-r">
+                <p class="parrafo-copy">Copyright 2022 - Todos los derechos reservados</p>
             </div>
         </div>
     </footer>
-        <!--Fin del footer-->
+    <!--Fin del footer-->
 
-        <!--Inicio del Copyright-->
-        <div>
-            <p class="parrafo-copy">Copyright 2022 - Todos los derechos reservados</p>
-        </div>
-        <!-- Fin del Copyright-->
-
-
-        <!-- Link a JavaScript -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-        </script>
+    <!-- Link a JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
 </body>
 <!--Fin del Body-->
 

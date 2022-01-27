@@ -1,86 +1,10 @@
-/* Footer */
-<<<<<<< HEAD
-.card-body {
-    margin-bottom: 0.5em;
-    padding-bottom: 0.5em;
-}
-
-h2 {
-    font-size: 1em;
-    font-weight: bold;
-    color: grey;
-    text-align: center;
-    padding-top: 3em;
-    padding-bottom: 0.5%;
-    margin-top: 2.5em;
-
-    &:hover {
-        transform: scale(1.1);
-        color: crimson;
-    }
-}
-
-.linkedin {
-    display: block;
-    margin-left: 0.5em;
-    margin-bottom: 0.6em;
-    padding-top: 0.2em;
-
-    &:hover {
-        transition: 2.3s;
-        transform: rotate(360deg);
-    }
-}
-
-.facebook {
-    display: block;
-    margin-left: 0.5em;
-    margin-bottom: 0.2em;
-    padding: 0.2em;
-
-    &:hover {
-        transition: 2.3s;
-        transform: rotate(360deg);
-    }
-}
-
-.card {
-    border: 0px;
-    margin-top: 7em;
-    max-width: 300px;
-}
-
-.card-title {
-    font-size: 0.8em;
-    font-weight: bold;
-    color: grey;
-    text-align: left;
-}
-
-.parrafo-copy {
-    font-size: 0.5em;
-    font-weight: bold;
-    color: grey;
-    text-align: center;
-    padding-bottom: 0.1%;
-}
-=======
 /*Propiedades del footer*/
 
-.footer {
-	display: block;
-}
-.card-title{
+.card-title {
 	@media only screen and (min-device-width : 320px) and (max-device-width : 767px) {
 		color: darkred;
-		}
+	}
 }
-
-.card-body {
-	margin-bottom: 0.5em;
-	padding-bottom: 0.5em;
-}
-
 
 h3 {
 	font-size: 1em;
@@ -91,10 +15,10 @@ h3 {
 	padding-bottom: 0.5%;
 	margin-top: 2.5em;
 
-	&:hover {
-		transform: scale(1.1);
-		color: crimson;
-	}
+	// &:hover {
+	// 	transform: scale(1.1);
+	// 	color: crimson;
+	// }
 }
 
 .linkedin {
@@ -128,14 +52,44 @@ h3 {
 }
 
 
-	.parrafo-copy {
-		@media only screen and (min-device-width : 320px) and (max-device-width : 767px) {
-			color: darkred;
-			}
-		font-size: 0.7em;
-		font-weight: bold;
-		color: grey;
-		text-align: center;
-		padding-bottom: 0.1%;
+.parrafo-copy {
+	@media only screen and (min-device-width : 320px) and (max-device-width : 767px) {
+		color: darkred;
 	}
->>>>>>> otcsass
+
+	font-size: 0.7em;
+	font-weight: bold;
+	color: grey;
+	text-align: center;
+	padding-bottom: 0.1%;
+}
+
+.footer-redes {
+	display: grid;
+	gap: 2px;
+	grid-template-areas: 'a a'
+		'b c'
+		'd d';
+}
+
+.f-head {
+	text-align: center;
+	justify-self: center;
+	grid-area: a;
+}
+
+.fb {
+	justify-self: center;
+	grid-area: b;
+}
+
+.ln {
+	justify-self: center;
+	grid-area: c;
+}
+
+.copy-r {
+	justify-self: center;
+	align-items: center;
+	grid-area: d;
+}

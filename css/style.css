@@ -1,18 +1,648 @@
-/* Error: expected "{".
- *    ,
- * 72 | >>>>>>> otcsass
- *    |                ^
- *    '
- *   scss\components\_header.scss 72:16  @import
- *   scss\style.scss 2:9                 root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected "{".\a    \2577 \a 72 \2502  >>>>>>> otcsass\d\a    \2502                 ^\a    \2575 \a   scss\\components\\_header.scss 72:16  @import\a   scss\\style.scss 2:9                 root stylesheet';
+@charset "UTF-8";
+/* Reset CSS */
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
 }
+
+/* Header */
+.header {
+  padding: 15px 0;
+}
+.header .logo a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .header-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  width: 50%;
+  height: 50%;
+}
+
+.title h1 {
+  text-align: center;
+  padding: 0 20px;
+}
+
+.header-img img {
+  width: 50%;
+  height: 50%;
+}
+
+/* Body */
+body {
+  font-family: "Raleway", sans-serif;
+  color: grey;
+  text-align: center;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
+  body * {
+    color: darkred;
+    font-size: 0.8em;
+    font-weight: bolder;
+  }
+  body p {
+    color: darkred;
+  }
+  body h2 {
+    font-size: 1em;
+  }
+  body p {
+    font-size: 1.1em;
+  }
+}
+body figcaption {
+  font-weight: bold;
+}
+body a {
+  text-decoration: none;
+}
+body h2 {
+  font-size: 1.2em;
+  padding-top: 2em;
+  padding-bottom: 1em;
+}
+body p {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: grey;
+  font-family: "Raleway", sans-serif;
+  padding-top: 5%;
+}
+
+.body-suscripcion,
+.body-servicios {
+  display: grid;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-size: 1em;
+  color: grey;
+  font-family: "Raleway", sans-serif;
+  padding-top: 15%;
+}
+
+/* Menú hamburguesa */
+.dropdown {
+  z-index: 2;
+  display: block;
+  margin-right: 10px;
+  width: 50px;
+  height: 50px;
+  padding: 20px;
+  border: white;
+  background: white;
+}
+
+.main {
+  display: inline-block;
+  text-align: center;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 0.9em;
+}
+
+.btn {
+  display: flex;
+  box-sizing: border-box;
+  margin: 1%;
+  padding: 0%;
+  text-align: left;
+  color: #fcf9f9;
+  cursor: hand;
+}
+.btn:hover {
+  transition: 2.3s;
+  transform: rotate(360deg);
+}
+
+.btn-secondary {
+  background-color: white;
+  border: none;
+  padding-top: 0.1rem;
+  padding-right: 0.6rem;
+}
+.btn-secondary:focus {
+  color: white;
+  text-decoration-style: none;
+  background-color: #f8f9fa;
+  border-color: #f8f9fa;
+  box-shadow: 0 0 0 0.25rem #f8f9fa;
+}
+
+li::before {
+  content: "+";
+  position: relative;
+  left: -1px;
+}
+
+/*Propiedades del footer*/
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+  .card-title {
+    color: darkred;
+  }
+}
+
+h3 {
+  font-size: 1em;
+  font-weight: bold;
+  color: grey;
+  text-align: left;
+  padding-top: 3em;
+  padding-bottom: 0.5%;
+  margin-top: 2.5em;
+}
+
+.linkedin {
+  display: block;
+  margin-left: 0.5em;
+  margin-bottom: 0.6em;
+  padding-top: 0.2em;
+}
+.linkedin:hover {
+  transition: 2.3s;
+  transform: rotate(360deg);
+}
+
+.facebook {
+  display: block;
+  margin-left: 0.5em;
+  margin-bottom: 0.2em;
+  padding: 0.2em;
+}
+.facebook:hover {
+  transition: 2.3s;
+  transform: rotate(360deg);
+}
+
+.card {
+  border: 0px;
+  margin-top: 7em;
+  max-width: 300px;
+}
+
+.parrafo-copy {
+  font-size: 0.7em;
+  font-weight: bold;
+  color: grey;
+  text-align: center;
+  padding-bottom: 0.1%;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+  .parrafo-copy {
+    color: darkred;
+  }
+}
+
+.footer-redes {
+  display: grid;
+  gap: 2px;
+  grid-template-areas: "a a" "b c" "d d";
+}
+
+.f-head {
+  text-align: center;
+  justify-self: center;
+  grid-area: a;
+}
+
+.fb {
+  justify-self: center;
+  grid-area: b;
+}
+
+.ln {
+  justify-self: center;
+  grid-area: c;
+}
+
+.copy-r {
+  justify-self: center;
+  align-items: center;
+  grid-area: d;
+}
+
+/* Formulario de Suscripción */
+.contenedor-suscribe {
+  display: inline-block;
+}
+
+.form-control:focus {
+  background-color: goldenrod;
+  font-weight: bolder;
+}
+
+/* Portfolio */
+/* Portfolio y efectos */
+.portfolio {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  grid-area: 1/1/2/2;
+  grid-area: 1/2/2/3;
+  grid-area: 2/1/3/2;
+  grid-area: 2/2/3/3;
+  grid-area: 3/1/4/2;
+}
+
+.ceti:hover {
+  border: 1px solid grey;
+  transform: scale(1.1);
+}
+
+.lope:hover {
+  border: 1px solid grey;
+  transform: scale(1.1);
+}
+
+.napro:hover {
+  border: 1px solid grey;
+  transform: scale(1.1);
+}
+
+.para:hover {
+  border: 1px solid grey;
+  transform: scale(1.1);
+}
+
+.vita:hover {
+  border: 1px solid grey;
+  transform: scale(1.1);
+}
+
+/* Ajustes Iframe mapa google contacto y efecto */
+.mapa-google {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+.mapa-google:hover {
+  padding: 0px;
+  transform: scale(1.1);
+}
+.mapa-google iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Body */
+body {
+  font-family: "Raleway", sans-serif;
+  color: grey;
+  text-align: center;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
+  body * {
+    color: darkred;
+    font-size: 0.8em;
+    font-weight: bolder;
+  }
+  body p {
+    color: darkred;
+  }
+  body h2 {
+    font-size: 1em;
+  }
+  body p {
+    font-size: 1.1em;
+  }
+}
+body figcaption {
+  font-weight: bold;
+}
+body a {
+  text-decoration: none;
+}
+body h2 {
+  font-size: 1.2em;
+  padding-top: 2em;
+  padding-bottom: 1em;
+}
+body p {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: grey;
+  font-family: "Raleway", sans-serif;
+  padding-top: 5%;
+}
+
+.body-suscripcion,
+.body-servicios {
+  display: grid;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-size: 1em;
+  color: grey;
+  font-family: "Raleway", sans-serif;
+  padding-top: 15%;
+}
+
+/* Header */
+.header {
+  padding: 15px 0;
+}
+.header .logo a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .header-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  width: 50%;
+  height: 50%;
+}
+
+.title h1 {
+  text-align: center;
+  padding: 0 20px;
+}
+
+.header-img img {
+  width: 50%;
+  height: 50%;
+}
+
+/* Menú hamburguesa */
+.dropdown {
+  z-index: 2;
+  display: block;
+  margin-right: 10px;
+  width: 50px;
+  height: 50px;
+  padding: 20px;
+  border: white;
+  background: white;
+}
+
+.main {
+  display: inline-block;
+  text-align: center;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 0.9em;
+}
+
+.btn {
+  display: flex;
+  box-sizing: border-box;
+  margin: 1%;
+  padding: 0%;
+  text-align: left;
+  color: #fcf9f9;
+  cursor: hand;
+}
+.btn:hover {
+  transition: 2.3s;
+  transform: rotate(360deg);
+}
+
+.btn-secondary {
+  background-color: white;
+  border: none;
+  padding-top: 0.1rem;
+  padding-right: 0.6rem;
+}
+.btn-secondary:focus {
+  color: white;
+  text-decoration-style: none;
+  background-color: #f8f9fa;
+  border-color: #f8f9fa;
+  box-shadow: 0 0 0 0.25rem #f8f9fa;
+}
+
+li::before {
+  content: "+";
+  position: relative;
+  left: -1px;
+}
+
+/*Ajustes del Main*/
+.main {
+  display: inline-block;
+  text-align: center;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 0.9em;
+  color: grey;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
+  .main * {
+    color: darkred;
+    font-weight: bolder;
+  }
+  .main p {
+    color: darkred;
+  }
+}
+
+/* Portfolio */
+/* Portfolio y efectos */
+.portfolio {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  grid-area: 1/1/2/2;
+  grid-area: 1/2/2/3;
+  grid-area: 2/1/3/2;
+  grid-area: 2/2/3/3;
+  grid-area: 3/1/4/2;
+}
+
+.ceti:hover {
+  border: 1px solid grey;
+  transform: scale(1.1);
+}
+
+.lope:hover {
+  border: 1px solid grey;
+  transform: scale(1.1);
+}
+
+.napro:hover {
+  border: 1px solid grey;
+  transform: scale(1.1);
+}
+
+.para:hover {
+  border: 1px solid grey;
+  transform: scale(1.1);
+}
+
+.vita:hover {
+  border: 1px solid grey;
+  transform: scale(1.1);
+}
+
+/* Formulario de Suscripción y efecto */
+.contenedor-suscribe {
+  display: inline-block;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+  .contenedor-suscribe .input-group-text {
+    color: darkred;
+    font-size: 2.3em;
+    font-weight: bolder;
+  }
+}
+.contenedor-suscribe .form-control:focus,
+.contenedor-suscribe .visually-hidden:focus {
+  background-color: goldenrod;
+  font-weight: bolder;
+}
+
+.btn {
+  margin-top: 1em;
+}
+.btn:hover {
+  transition: 2.3s;
+  transform: rotate(360deg);
+}
+
+/* Ajustes Iframe mapa google contacto y efecto */
+.mapa-google {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+.mapa-google:hover {
+  padding: 0px;
+  transform: scale(1.1);
+}
+.mapa-google iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/*Propiedades del footer*/
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+  .card-title {
+    color: darkred;
+  }
+}
+
+h3 {
+  font-size: 1em;
+  font-weight: bold;
+  color: grey;
+  text-align: left;
+  padding-top: 3em;
+  padding-bottom: 0.5%;
+  margin-top: 2.5em;
+}
+
+.linkedin {
+  display: block;
+  margin-left: 0.5em;
+  margin-bottom: 0.6em;
+  padding-top: 0.2em;
+}
+.linkedin:hover {
+  transition: 2.3s;
+  transform: rotate(360deg);
+}
+
+.facebook {
+  display: block;
+  margin-left: 0.5em;
+  margin-bottom: 0.2em;
+  padding: 0.2em;
+}
+.facebook:hover {
+  transition: 2.3s;
+  transform: rotate(360deg);
+}
+
+.card {
+  border: 0px;
+  margin-top: 7em;
+  max-width: 300px;
+}
+
+.parrafo-copy {
+  font-size: 0.7em;
+  font-weight: bold;
+  color: grey;
+  text-align: center;
+  padding-bottom: 0.1%;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+  .parrafo-copy {
+    color: darkred;
+  }
+}
+
+.footer-redes {
+  display: grid;
+  gap: 2px;
+  grid-template-areas: "a a" "b c" "d d";
+}
+
+.f-head {
+  text-align: center;
+  justify-self: center;
+  grid-area: a;
+}
+
+.fb {
+  justify-self: center;
+  grid-area: b;
+}
+
+.ln {
+  justify-self: center;
+  grid-area: c;
+}
+
+.copy-r {
+  justify-self: center;
+  align-items: center;
+  grid-area: d;
+}
+
+/*# sourceMappingURL=style.css.map */
