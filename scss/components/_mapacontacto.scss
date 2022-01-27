@@ -2,11 +2,11 @@
 
 .mapa-google {
 	&:hover {
-		padding: 0px;
 		transform: scale(1.1);
 	}
 
 	position: relative;
+	transition: all .5s ease-out;
 	padding-bottom: 56.25%;
 	height: 0;
 	overflow: hidden;

@@ -292,12 +292,12 @@ h3 {
 /* Ajustes Iframe mapa google contacto y efecto */
 .mapa-google {
   position: relative;
+  transition: all 0.5s ease-out;
   padding-bottom: 56.25%;
   height: 0;
   overflow: hidden;
 }
 .mapa-google:hover {
-  padding: 0px;
   transform: scale(1.1);
 }
 .mapa-google iframe {
@@ -543,12 +543,12 @@ li::before {
 /* Ajustes Iframe mapa google contacto y efecto */
 .mapa-google {
   position: relative;
+  transition: all 0.5s ease-out;
   padding-bottom: 56.25%;
   height: 0;
   overflow: hidden;
 }
 .mapa-google:hover {
-  padding: 0px;
   transform: scale(1.1);
 }
 .mapa-google iframe {
