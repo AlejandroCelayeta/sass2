@@ -1,41 +1,21 @@
 /* Header */
 .header {
-	padding-top: 20px;
-			
+	padding-top: 10px;
+	padding-bottom: 0%;
+
 	.logo {
+		img {
+			display: block;
+			width: 45%;
+			height: auto;
+		}
+
 		a {
-			display: flex;
-			justify-content: center;
-			align-items: center;
+			display: block;
+			
+			width: 650px;
+			height: auto;
 		}
 	}
-	.title {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
-	.header-img {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
-}
-.logo {
-	img {
-		width: 50%;
-		height: 50%;
-	}
-}
-.title {
-	h1 {
-		text-align: center;
-		padding: 0 20px;
-	}
-}
-.header-img {
-	img {
-		width: 50%;
-		height: 50%;
-	}
-}
 
+}

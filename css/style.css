@@ -6,47 +6,41 @@
   box-sizing: border-box;
 }
 
+/* Título */
+.title {
+  display: block;
+  text-align: left;
+  font-size: 1.4em;
+  font-weight: bolder;
+  padding-top: 0%;
+  padding-left: 10%;
+  color: black;
+}
+
 /* Header */
 .header {
-  padding-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 0%;
+}
+.header .logo img {
+  display: block;
+  width: 45%;
+  height: auto;
 }
 .header .logo a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.header .title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.header .header-img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.logo img {
-  width: 50%;
-  height: 50%;
-}
-
-.title h1 {
-  text-align: center;
-  padding: 0 20px;
-}
-
-.header-img img {
-  width: 50%;
-  height: 50%;
+  display: block;
+  width: 650px;
+  height: auto;
 }
 
 /* Body */
 /*Parámetros media query*/
 body {
   /* Parámetros del body */
-  font-family: "Raleway", sans-serif;
-  color: grey;
+  background-color: #f4f1bb;
+  font-family: "Fredoka One", cursive;
+  font-family: "Oswald", sans-serif;
+  color: black;
   text-align: center;
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
@@ -70,13 +64,14 @@ body a {
 }
 body h2 {
   font-size: 1.2em;
+  font-weight: bold;
   padding-top: 2em;
   padding-bottom: 1em;
 }
 body p {
   font-size: 1.3em;
   font-weight: bold;
-  color: grey;
+  color: black;
   font-family: "Raleway", sans-serif;
   padding-top: 5%;
 }
@@ -94,8 +89,8 @@ body p {
   width: 50px;
   height: 50px;
   padding: 20px;
-  border: white;
-  background: white;
+  border: #f4f1bb;
+  background: #f4f1bb;
 }
 
 .main {
@@ -107,13 +102,18 @@ body p {
   font-size: 0.9em;
 }
 
+.img-hamburguesa {
+  width: 60px;
+  height: auto;
+}
+
 .btn {
   display: flex;
   box-sizing: border-box;
   margin: 1%;
   padding: 0%;
   text-align: left;
-  color: #fcf9f9;
+  color: #f4f1bb;
   cursor: hand;
 }
 .btn:hover {
@@ -122,19 +122,22 @@ body p {
 }
 
 .btn-secondary {
-  background-color: white;
+  background-color: #f4f1bb;
   border: none;
   padding-top: 0.1rem;
   padding-right: 0.6rem;
 }
 .btn-secondary:focus {
-  color: white;
+  color: #f4f1bb;
   text-decoration-style: none;
-  background-color: #f8f9fa;
-  border-color: #f8f9fa;
-  box-shadow: 0 0 0 0.25rem #f8f9fa;
+  background-color: #f4f1bb;
+  border-color: #f4f1bb;
+  box-shadow: 0 0 0 0.25rem #f4f1bb;
 }
 
+li {
+  background-color: #f4f1bb;
+}
 li::before {
   content: ">";
   position: absolute;
@@ -145,7 +148,7 @@ li::before {
 h3 {
   font-size: 1em;
   font-weight: bold;
-  color: grey;
+  color: black;
   text-align: left;
   padding-top: 3em;
   padding-bottom: 0.5%;
@@ -166,6 +169,8 @@ h3:hover {
   margin-left: 0.5em;
   margin-bottom: 0.6em;
   padding-top: 0.2em;
+  width: 50px;
+  height: auto;
 }
 .linkedin:hover {
   transition: 2.3s;
@@ -177,6 +182,8 @@ h3:hover {
   margin-left: 0.5em;
   margin-bottom: 0.2em;
   padding: 0.2em;
+  width: 60px;
+  height: auto;
 }
 .facebook:hover {
   transition: 2.3s;
@@ -186,7 +193,7 @@ h3:hover {
 .parrafo-copy {
   font-size: 0.7em;
   font-weight: bold;
-  color: grey;
+  color: black;
   text-align: center;
   padding-bottom: 0.1%;
 }
@@ -220,8 +227,6 @@ h3:hover {
 }
 
 .copy-r {
-  justify-self: center;
-  align-items: center;
   grid-area: d;
 }
 
@@ -237,10 +242,20 @@ h3:hover {
 
 /* Portfolio y efectos */
 .carousel-container {
-  width: 50%;
+  width: 40%;
   display: block;
   margin: auto auto;
   justify-content: center;
+}
+.carousel-container .carousel-control-prev-icon,
+.carousel-container .carousel-control-next-icon {
+  height: 25px;
+  width: 25px;
+  outline: black;
+  background-color: rgba(0, 0, 0, 0.3);
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  border: 1px solid black;
 }
 
 /* Ajustes Iframe mapa google contacto y efecto */
@@ -258,16 +273,18 @@ h3:hover {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 80%;
 }
 
 /* Body */
 /*Parámetros media query*/
 body {
   /* Parámetros del body */
-  font-family: "Raleway", sans-serif;
-  color: grey;
+  background-color: #f4f1bb;
+  font-family: "Fredoka One", cursive;
+  font-family: "Oswald", sans-serif;
+  color: black;
   text-align: center;
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
@@ -291,13 +308,14 @@ body a {
 }
 body h2 {
   font-size: 1.2em;
+  font-weight: bold;
   padding-top: 2em;
   padding-bottom: 1em;
 }
 body p {
   font-size: 1.3em;
   font-weight: bold;
-  color: grey;
+  color: black;
   font-family: "Raleway", sans-serif;
   padding-top: 5%;
 }
@@ -309,37 +327,18 @@ body p {
 
 /* Header */
 .header {
-  padding-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 0%;
+}
+.header .logo img {
+  display: block;
+  width: 45%;
+  height: auto;
 }
 .header .logo a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.header .title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.header .header-img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.logo img {
-  width: 50%;
-  height: 50%;
-}
-
-.title h1 {
-  text-align: center;
-  padding: 0 20px;
-}
-
-.header-img img {
-  width: 50%;
-  height: 50%;
+  display: block;
+  width: 650px;
+  height: auto;
 }
 
 /* Menú hamburguesa */
@@ -350,8 +349,8 @@ body p {
   width: 50px;
   height: 50px;
   padding: 20px;
-  border: white;
-  background: white;
+  border: #f4f1bb;
+  background: #f4f1bb;
 }
 
 .main {
@@ -363,13 +362,18 @@ body p {
   font-size: 0.9em;
 }
 
+.img-hamburguesa {
+  width: 60px;
+  height: auto;
+}
+
 .btn {
   display: flex;
   box-sizing: border-box;
   margin: 1%;
   padding: 0%;
   text-align: left;
-  color: #fcf9f9;
+  color: #f4f1bb;
   cursor: hand;
 }
 .btn:hover {
@@ -378,19 +382,22 @@ body p {
 }
 
 .btn-secondary {
-  background-color: white;
+  background-color: #f4f1bb;
   border: none;
   padding-top: 0.1rem;
   padding-right: 0.6rem;
 }
 .btn-secondary:focus {
-  color: white;
+  color: #f4f1bb;
   text-decoration-style: none;
-  background-color: #f8f9fa;
-  border-color: #f8f9fa;
-  box-shadow: 0 0 0 0.25rem #f8f9fa;
+  background-color: #f4f1bb;
+  border-color: #f4f1bb;
+  box-shadow: 0 0 0 0.25rem #f4f1bb;
 }
 
+li {
+  background-color: #f4f1bb;
+}
 li::before {
   content: ">";
   position: absolute;
@@ -420,10 +427,20 @@ li::before {
 
 /* Portfolio y efectos */
 .carousel-container {
-  width: 50%;
+  width: 40%;
   display: block;
   margin: auto auto;
   justify-content: center;
+}
+.carousel-container .carousel-control-prev-icon,
+.carousel-container .carousel-control-next-icon {
+  height: 25px;
+  width: 25px;
+  outline: black;
+  background-color: rgba(0, 0, 0, 0.3);
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  border: 1px solid black;
 }
 
 /* Formulario de Suscripción y efecto */
@@ -466,15 +483,15 @@ li::before {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 80%;
 }
 
 /*Propiedades del footer*/
 h3 {
   font-size: 1em;
   font-weight: bold;
-  color: grey;
+  color: black;
   text-align: left;
   padding-top: 3em;
   padding-bottom: 0.5%;
@@ -495,6 +512,8 @@ h3:hover {
   margin-left: 0.5em;
   margin-bottom: 0.6em;
   padding-top: 0.2em;
+  width: 50px;
+  height: auto;
 }
 .linkedin:hover {
   transition: 2.3s;
@@ -506,6 +525,8 @@ h3:hover {
   margin-left: 0.5em;
   margin-bottom: 0.2em;
   padding: 0.2em;
+  width: 60px;
+  height: auto;
 }
 .facebook:hover {
   transition: 2.3s;
@@ -515,7 +536,7 @@ h3:hover {
 .parrafo-copy {
   font-size: 0.7em;
   font-weight: bold;
-  color: grey;
+  color: black;
   text-align: center;
   padding-bottom: 0.1%;
 }
@@ -549,8 +570,6 @@ h3:hover {
 }
 
 .copy-r {
-  justify-self: center;
-  align-items: center;
   grid-area: d;
 }
 

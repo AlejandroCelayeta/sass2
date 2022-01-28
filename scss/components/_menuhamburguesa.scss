@@ -7,8 +7,8 @@
     width: 50px;
     height: 50px;
     padding: 20px;
-    border: white;
-    background: white;
+    border: #f4f1bb;
+    background: #f4f1bb;
 }
 
 .main {
@@ -20,13 +20,19 @@
     font-size: 0.9em;
 }
 
+.img-hamburguesa {
+    width: 60px;
+    height: auto;
+
+}
+
 .btn {
     display: flex;
     box-sizing: border-box;
     margin: 1%;
     padding: 0%;
     text-align: left;
-    color: rgb(252, 249, 249);
+    color: #f4f1bb;
     cursor: hand;
 
     &:hover {
@@ -36,21 +42,24 @@
 }
 
 .btn-secondary {
-    background-color: white;
+    background-color: #f4f1bb;
+    ;
     border: none;
     padding-top: 0.1rem;
     padding-right: 0.6rem;
 
     &:focus {
-        color: white;
+        color: #f4f1bb;
         text-decoration-style: none;
-        background-color: #f8f9fa;
-        border-color: #f8f9fa;
-        box-shadow: 0 0 0 0.25rem #f8f9fa;
+        background-color: #f4f1bb;
+        border-color: #f4f1bb;
+        box-shadow: 0 0 0 0.25rem #f4f1bb;
     }
 }
 
 li {
+    background-color: #f4f1bb;
+
     &::before {
         content: ">";
         position: absolute;

@@ -27,10 +27,12 @@ body {
 
 	/* Parámetros del body */
 
-	
-	font-family: 'Raleway',
+	background-color: #f4f1bb;
+	font-family: 'Fredoka One',
+	cursive;
+	font-family: 'Oswald',
 	sans-serif;
-	color: grey;
+	color: black;
 	text-align: center;
 
 	a {
@@ -39,6 +41,7 @@ body {
 
 	h2 {
 		font-size: 1.2em;
+		font-weight: bold;
 		padding-top: 2em;
 		padding-bottom: 1em;
 	}
@@ -46,7 +49,7 @@ body {
 	p {
 		font-size: 1.3em;
 		font-weight: bold;
-		color: grey;
+		color: black;
 		font-family: 'Raleway', sans-serif;
 		padding-top: 5%;
 	}
