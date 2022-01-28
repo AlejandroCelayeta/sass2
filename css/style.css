@@ -251,6 +251,12 @@ h3 {
 
 /* Portfolio */
 /* Portfolio y efectos */
+.carousel-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .portfolio {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -477,6 +483,12 @@ li::before {
 
 /* Portfolio */
 /* Portfolio y efectos */
+.carousel-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .portfolio {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
