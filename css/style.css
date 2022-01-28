@@ -243,19 +243,6 @@ h3:hover {
   justify-content: center;
 }
 
-.portfolio {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
-  grid-area: 1/1/2/2;
-  grid-area: 1/2/2/3;
-  grid-area: 2/1/3/2;
-  grid-area: 2/2/3/3;
-  grid-area: 3/1/4/2;
-}
-
 /* Ajustes Iframe mapa google contacto y efecto */
 .mapa-google {
   position: relative;
@@ -437,19 +424,6 @@ li::before {
   display: block;
   margin: auto auto;
   justify-content: center;
-}
-
-.portfolio {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
-  grid-area: 1/1/2/2;
-  grid-area: 1/2/2/3;
-  grid-area: 2/1/3/2;
-  grid-area: 2/2/3/3;
-  grid-area: 3/1/4/2;
 }
 
 /* Formulario de Suscripción y efecto */
