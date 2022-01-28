@@ -52,8 +52,8 @@
 
 li {
     &::before {
-        content: "+";
-        position: relative;
+        content: ">";
+        position: absolute;
         left: -1px;
     }
 }
