@@ -1,5 +1,7 @@
 /* Body */
 
+/*Parámetros media query*/
+
 body {
 	@media only screen and (min-device-width : 320px) and (max-device-width : 1024px) {
 		* {
@@ -23,14 +25,13 @@ body {
 
 	}
 
+	/* Parámetros del body */
+
+	
 	font-family: 'Raleway',
 	sans-serif;
 	color: grey;
 	text-align: center;
-
-	figcaption {
-		font-weight: bold;
-	}
 
 	a {
 		text-decoration: none;
@@ -55,16 +56,3 @@ body {
 .body-servicios {
 	display: grid;
 }
-
-a {
-	text-decoration: none;
-}
-p {
-	font-size: 1em;
-	color: grey;
-	font-family: 'Raleway', sans-serif;
-	padding-top: 15%;
-}
-
-
-

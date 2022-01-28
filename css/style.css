@@ -8,7 +8,7 @@
 
 /* Header */
 .header {
-  padding: 15px 0;
+  padding-top: 20px;
 }
 .header .logo a {
   display: flex;
@@ -42,7 +42,9 @@
 }
 
 /* Body */
+/*Parámetros media query*/
 body {
+  /* Parámetros del body */
   font-family: "Raleway", sans-serif;
   color: grey;
   text-align: center;
@@ -63,9 +65,6 @@ body {
     font-size: 1.1em;
   }
 }
-body figcaption {
-  font-weight: bold;
-}
 body a {
   text-decoration: none;
 }
@@ -85,17 +84,6 @@ body p {
 .body-suscripcion,
 .body-servicios {
   display: grid;
-}
-
-a {
-  text-decoration: none;
-}
-
-p {
-  font-size: 1em;
-  color: grey;
-  font-family: "Raleway", sans-serif;
-  padding-top: 15%;
 }
 
 /* Menú hamburguesa */
@@ -154,12 +142,6 @@ li::before {
 }
 
 /*Propiedades del footer*/
-@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
-  .card-title {
-    color: darkred;
-  }
-}
-
 h3 {
   font-size: 1em;
   font-weight: bold;
@@ -168,6 +150,15 @@ h3 {
   padding-top: 3em;
   padding-bottom: 0.5%;
   margin-top: 2.5em;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+  h3 {
+    color: darkred;
+  }
+}
+h3:hover {
+  transform: scale(1.1);
+  color: crimson;
 }
 
 .linkedin {
@@ -192,12 +183,6 @@ h3 {
   transform: rotate(360deg);
 }
 
-.card {
-  border: 0px;
-  margin-top: 7em;
-  max-width: 300px;
-}
-
 .parrafo-copy {
   font-size: 0.7em;
   font-weight: bold;
@@ -212,6 +197,7 @@ h3 {
 }
 
 .footer-redes {
+  max-width: 100%;
   display: grid;
   gap: 2px;
   grid-template-areas: "a a" "b c" "d d";
@@ -290,7 +276,9 @@ h3 {
 }
 
 /* Body */
+/*Parámetros media query*/
 body {
+  /* Parámetros del body */
   font-family: "Raleway", sans-serif;
   color: grey;
   text-align: center;
@@ -310,9 +298,6 @@ body {
   body p {
     font-size: 1.1em;
   }
-}
-body figcaption {
-  font-weight: bold;
 }
 body a {
   text-decoration: none;
@@ -335,20 +320,9 @@ body p {
   display: grid;
 }
 
-a {
-  text-decoration: none;
-}
-
-p {
-  font-size: 1em;
-  color: grey;
-  font-family: "Raleway", sans-serif;
-  padding-top: 15%;
-}
-
 /* Header */
 .header {
-  padding: 15px 0;
+  padding-top: 20px;
 }
 .header .logo a {
   display: flex;
@@ -445,6 +419,7 @@ li::before {
   margin-right: auto;
   font-size: 0.9em;
   color: grey;
+  overflow: hidden;
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
   .main * {
@@ -522,12 +497,6 @@ li::before {
 }
 
 /*Propiedades del footer*/
-@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
-  .card-title {
-    color: darkred;
-  }
-}
-
 h3 {
   font-size: 1em;
   font-weight: bold;
@@ -536,6 +505,15 @@ h3 {
   padding-top: 3em;
   padding-bottom: 0.5%;
   margin-top: 2.5em;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+  h3 {
+    color: darkred;
+  }
+}
+h3:hover {
+  transform: scale(1.1);
+  color: crimson;
 }
 
 .linkedin {
@@ -560,12 +538,6 @@ h3 {
   transform: rotate(360deg);
 }
 
-.card {
-  border: 0px;
-  margin-top: 7em;
-  max-width: 300px;
-}
-
 .parrafo-copy {
   font-size: 0.7em;
   font-weight: bold;
@@ -580,6 +552,7 @@ h3 {
 }
 
 .footer-redes {
+  max-width: 100%;
   display: grid;
   gap: 2px;
   grid-template-areas: "a a" "b c" "d d";

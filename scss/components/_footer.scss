@@ -1,12 +1,12 @@
 /*Propiedades del footer*/
 
-.card-title {
+
+h3 {
+
 	@media only screen and (min-device-width : 320px) and (max-device-width : 767px) {
 		color: darkred;
 	}
-}
 
-h3 {
 	font-size: 1em;
 	font-weight: bold;
 	color: grey;
@@ -15,10 +15,10 @@ h3 {
 	padding-bottom: 0.5%;
 	margin-top: 2.5em;
 
-	// &:hover {
-	// 	transform: scale(1.1);
-	// 	color: crimson;
-	// }
+	&:hover {
+		transform: scale(1.1);
+		color: crimson;
+	}
 }
 
 .linkedin {
@@ -45,13 +45,6 @@ h3 {
 	}
 }
 
-.card {
-	border: 0px;
-	margin-top: 7em;
-	max-width: 300px;
-}
-
-
 .parrafo-copy {
 	@media only screen and (min-device-width : 320px) and (max-device-width : 767px) {
 		color: darkred;
@@ -65,6 +58,7 @@ h3 {
 }
 
 .footer-redes {
+	max-width: 100%;
 	display: grid;
 	gap: 2px;
 	grid-template-areas: 'a a'
