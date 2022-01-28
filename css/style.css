@@ -273,6 +273,14 @@ h3:hover {
 .mapa-google:hover {
   transform: scale(1.1);
 }
+.mapa-google iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
 
 /* Body */
 /*Parámetros media query*/
@@ -479,6 +487,14 @@ li::before {
 }
 .mapa-google:hover {
   transform: scale(1.1);
+}
+.mapa-google iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
 }
 
 /*Propiedades del footer*/
