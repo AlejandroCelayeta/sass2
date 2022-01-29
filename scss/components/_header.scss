@@ -1,7 +1,14 @@
 /* Header */
 .header {
-	padding-top: 10px;
+	padding-top: 1px;
 	padding-bottom: 0%;
+	background-color: rgb(245, 226, 142);
+	border: 1px solid grey;
+	background-image: url(../images/health.png);
+	background-repeat: no-repeat;
+	background-position-x: center;
+	background-position-y: center;
+	background-size: 25%;
 
 	.logo {
 		img {
@@ -12,7 +19,7 @@
 
 		a {
 			display: block;
-			
+
 			width: 650px;
 			height: auto;
 		}
