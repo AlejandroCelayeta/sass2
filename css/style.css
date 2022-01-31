@@ -35,20 +35,23 @@
   grid-row-gap: 0px;
   grid-template-areas: "1 1" "2 2";
 }
-.header-container .logo {
+
+.logo {
   display: flex;
   grid-area: 1;
   width: 30vh;
   height: auto;
   margin: 0%;
+  margin-left: 3%;
 }
-.header-container .img-header {
+
+.img-header {
   display: flex;
   justify-content: space-between;
   grid-template-areas: 2;
-  width: 30vh;
+  width: 25vh;
   vertical-align: center;
-  padding-left: 0%;
+  padding-left: 10%;
   height: auto;
   margin: 0%;
 }
@@ -66,20 +69,28 @@
 /* Variables de colores */
 /* Body */
 /*Parámetros media query*/
-body {
-  /* Parámetros del body */
-  background-color: #f4f1bb;
-  font-family: "Fredoka One", cursive;
-  font-family: "Oswald", sans-serif;
-  color: #0e0a0a;
-  text-align: center;
-  overflow-x: hidden;
-  box-sizing: content-box;
-}
-@media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
+@media only screen and (min-device-width: 480px) and (max-device-width: 1024px) {
+  body {
+    /* Parámetros del body */
+    background-color: #dddaa2;
+    font-family: "Fredoka One", cursive;
+    font-family: "Oswald", sans-serif;
+    color: #0e0a0a;
+    text-align: center;
+    overflow-x: hidden;
+    box-sizing: content-box;
+  }
   body * {
-    background-color: #6567ab;
-    font-size: 0.8em;
+    background-color: #fffefe;
+    font-size: 1.2em;
+    font-weight: bolder;
+    color: #0c4720;
+  }
+}
+@media only screen and (min-device-width: 480px) and (max-device-width: 1024px) and (min-device-width: 320px) and (max-device-width: 479px) {
+  body * {
+    background-color: #fffefe;
+    font-size: 1em;
     font-weight: bolder;
   }
   body p {
@@ -92,23 +103,23 @@ body {
     font-size: 1.2em;
   }
 }
-body a {
-  text-decoration: none;
+@media only screen and (min-device-width: 480px) and (max-device-width: 1024px) {
+  body a {
+    text-decoration: none;
+  }
+  body a h2 {
+    font-size: 0.8em;
+    color: #0e0a0a;
+    font-weight: bold;
+    padding-top: 2em;
+    padding-bottom: 1em;
+  }
 }
-body a h2 {
-  font-size: 0.8em;
-  color: #0e0a0a;
-  font-weight: bold;
-  padding-top: 2em;
-  padding-bottom: 1em;
-}
-
-.body-suscripcion,
-.body-servicios {
+body .body-suscripcion,
+body .body-servicios {
   display: grid;
 }
-
-p {
+body p {
   display: block;
   width: 90%;
   font-size: 1.4em;
@@ -256,28 +267,24 @@ h3:hover {
   display: grid;
   grid-template-areas: "a a" "b c" "d d";
 }
-
-.f-head {
+.footer-redes .f-head {
   margin: 0%;
   padding-top: 20%;
   text-align: center;
   justify-self: center;
   grid-area: a;
 }
-
-.fb {
+.footer-redes .fb {
   margin: 0%;
   padding: 0%;
   justify-self: center;
   grid-area: b;
 }
-
-.ln {
+.footer-redes .ln {
   justify-self: center;
   grid-area: c;
 }
-
-.copy-r {
+.footer-redes .copy-r {
   grid-area: d;
   text-align: center;
   margin-left: 10%;
@@ -294,7 +301,7 @@ h3:hover {
 }
 
 .form-control:focus {
-  background-color: #00805a;
+  background-color: #a74190;
   font-weight: bolder;
 }
 
@@ -391,20 +398,28 @@ section {
 /* Variables de colores */
 /* Body */
 /*Parámetros media query*/
-body {
-  /* Parámetros del body */
-  background-color: #f4f1bb;
-  font-family: "Fredoka One", cursive;
-  font-family: "Oswald", sans-serif;
-  color: #0e0a0a;
-  text-align: center;
-  overflow-x: hidden;
-  box-sizing: content-box;
-}
-@media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
+@media only screen and (min-device-width: 480px) and (max-device-width: 1024px) {
+  body {
+    /* Parámetros del body */
+    background-color: #dddaa2;
+    font-family: "Fredoka One", cursive;
+    font-family: "Oswald", sans-serif;
+    color: #0e0a0a;
+    text-align: center;
+    overflow-x: hidden;
+    box-sizing: content-box;
+  }
   body * {
-    background-color: #6567ab;
-    font-size: 0.8em;
+    background-color: #fffefe;
+    font-size: 1.2em;
+    font-weight: bolder;
+    color: #0c4720;
+  }
+}
+@media only screen and (min-device-width: 480px) and (max-device-width: 1024px) and (min-device-width: 320px) and (max-device-width: 479px) {
+  body * {
+    background-color: #fffefe;
+    font-size: 1em;
     font-weight: bolder;
   }
   body p {
@@ -417,23 +432,23 @@ body {
     font-size: 1.2em;
   }
 }
-body a {
-  text-decoration: none;
+@media only screen and (min-device-width: 480px) and (max-device-width: 1024px) {
+  body a {
+    text-decoration: none;
+  }
+  body a h2 {
+    font-size: 0.8em;
+    color: #0e0a0a;
+    font-weight: bold;
+    padding-top: 2em;
+    padding-bottom: 1em;
+  }
 }
-body a h2 {
-  font-size: 0.8em;
-  color: #0e0a0a;
-  font-weight: bold;
-  padding-top: 2em;
-  padding-bottom: 1em;
-}
-
-.body-suscripcion,
-.body-servicios {
+body .body-suscripcion,
+body .body-servicios {
   display: grid;
 }
-
-p {
+body p {
   display: block;
   width: 90%;
   font-size: 1.4em;
@@ -459,20 +474,23 @@ p {
   grid-row-gap: 0px;
   grid-template-areas: "1 1" "2 2";
 }
-.header-container .logo {
+
+.logo {
   display: flex;
   grid-area: 1;
   width: 30vh;
   height: auto;
   margin: 0%;
+  margin-left: 3%;
 }
-.header-container .img-header {
+
+.img-header {
   display: flex;
   justify-content: space-between;
   grid-template-areas: 2;
-  width: 30vh;
+  width: 25vh;
   vertical-align: center;
-  padding-left: 0%;
+  padding-left: 10%;
   height: auto;
   margin: 0%;
 }
@@ -699,28 +717,24 @@ h3:hover {
   display: grid;
   grid-template-areas: "a a" "b c" "d d";
 }
-
-.f-head {
+.footer-redes .f-head {
   margin: 0%;
   padding-top: 20%;
   text-align: center;
   justify-self: center;
   grid-area: a;
 }
-
-.fb {
+.footer-redes .fb {
   margin: 0%;
   padding: 0%;
   justify-self: center;
   grid-area: b;
 }
-
-.ln {
+.footer-redes .ln {
   justify-self: center;
   grid-area: c;
 }
-
-.copy-r {
+.footer-redes .copy-r {
   grid-area: d;
   text-align: center;
   margin-left: 10%;

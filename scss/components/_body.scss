@@ -6,69 +6,76 @@
 /*Parámetros media query*/
 
 body {
-	@media only screen and (min-device-width : 320px) and (max-device-width : 1024px) {
+	@media only screen and (min-device-width : 480px) and (max-device-width : 1024px) {
 		* {
-			background-color: rgb(101, 103, 171);
-			font-size: ($font-small);
-			font-weight: bolder;
-		}
-
-		p {
-			color: $font-color1;
-		}
-
-		h2 {
-			font-size: $font-medium;
-
-		}
-
-		p {
+			background-color: $bg-color8;
 			font-size: $font-large;
+			font-weight: bolder;
+			color: $font-color2;
 		}
 
+		@media only screen and (min-device-width : 320px) and (max-device-width : 479px) {
+			* {
+				background-color: $bg-color8;
+				font-size: ($font-medium);
+				font-weight: bolder;
+			}
 
+
+			p {
+				color: $font-color1;
+			}
+
+			h2 {
+				font-size: $font-medium;
+
+			}
+
+			p {
+				font-size: $font-large;
+			}
+		}
+
+		/* Parámetros del body */
+
+		background-color: #dddaa2;
+		font-family: 'Fredoka One',
+		cursive;
+		font-family: 'Oswald',
+		sans-serif;
+		color: $font-color1;
+		text-align: center;
+		overflow-x: hidden;
+		box-sizing: content-box;
+
+		a {
+			text-decoration: none;
+
+			h2 {
+				font-size: $font-small;
+				color: $font-color1;
+				font-weight: bold;
+				padding-top: 2em;
+				padding-bottom: 1em;
+			}
+		}
+	}
+
+	.body-suscripcion,
+	.body-servicios {
+		display: grid;
 
 	}
 
-	/* Parámetros del body */
-
-	background-color: #f4f1bb;
-	font-family: 'Fredoka One',
-	cursive;
-	font-family: 'Oswald',
-	sans-serif;
-	color: $font-color1;
-	text-align: center;
-	overflow-x: hidden;
-	box-sizing: content-box;
-
-	a {
-		text-decoration: none;
-
-		h2 {
-			font-size: $font-small;
-			color: $font-color1;
-			font-weight: bold;
-			padding-top: 2em;
-			padding-bottom: 1em;
-		}
+	p {
+		display: block;
+		width: 90%;
+		font-size: $font-xlarge;
+		font-weight: bold;
+		color: $font-color1;
+		font-family: 'Raleway', sans-serif;
+		padding-top: 5%;
+		padding-left: 30%;
+		text-align: center;
 	}
-}
-
-.body-suscripcion,
-.body-servicios {
-	display: grid;
-
-}
-
-p {
-	display: block;
-	width: 90%;
-	font-size: $font-xlarge;
-	font-weight: bold;
-	color: $font-color1;
-	font-family: 'Raleway', sans-serif;
-	padding-top: 5%;
-	padding-left: 30%;
-	text-align: center;
 }

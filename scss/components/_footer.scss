@@ -66,21 +66,19 @@ h3 {
 }
 
 .footer-redes {
+	.f-head {
+		margin: 0%;
+		padding-top: 20%;
+		text-align: center;
+		justify-self: center;
+		grid-area: a;
+	}
+
 	max-width: 100%;
 	display: grid;
 	grid-template-areas: 'a a'
-		'b c'
-		'd d';
-}
-
-.f-head {
-	margin: 0%;
-	padding-top: 20%;
-	text-align: center;
-	justify-self: center;
-	grid-area: a;
-}
-
+	'b c'
+	'd d';
 .fb {
 	margin: 0%;
 	padding: 0%;
@@ -98,4 +96,8 @@ h3 {
 	grid-area: d;
 	text-align: center;
 	margin-left: 10%;
+}	
 }
+
+
+
