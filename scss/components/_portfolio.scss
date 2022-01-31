@@ -1,24 +1,31 @@
+@import '../base/variables';
+
 /* Portfolio y efectos */
 
 .carousel-container {
-	.carousel-control-prev-icon,
-.carousel-control-next-icon {
-	height: 25px;
-	width: 25px;
-	outline: black;
-	background-color: rgba(0, 0, 0, 0.3);
-	background-size: 100%, 100%;
-	border-radius: 50%;
-	border: 1px solid black;
-}
 
-	width: 40%;
+	.carousel-control-prev-icon,
+	.carousel-control-next-icon {
+		height: 25px;
+		width: 25px;
+		outline: black;
+		background-color: rgba(0, 0, 0, 0.3);
+		background-size: 100%, 100%;
+		border-radius: 50%;
+		border: 1px solid black;
+	}
+
+	width: 100%;
 	display: block;
-	margin: auto auto;
+	margin: 4px;
 	justify-content: center;
 	padding-bottom: 5%;
 }
 
-
-
-
+.p-portfolio {
+	margin: 0%;
+	font-size: $font-medium;
+	padding: 10%;
+	padding-bottom: 2%;
+	width: 100%;
+}

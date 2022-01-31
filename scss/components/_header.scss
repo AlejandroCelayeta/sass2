@@ -1,28 +1,35 @@
+@import '../base/variables';
+
 /* Header */
-.header {
-	padding-top: 1px;
-	padding-bottom: 0%;
-	background-color: rgb(245, 226, 142);
-	border: 1px solid grey;
-	background-image: url(../images/health.png);
-	background-repeat: no-repeat;
-	background-position-x: center;
-	background-position-y: center;
-	background-size: 25%;
+.header-container {
 
-	.logo {
-		img {
-			display: block;
-			width: 45%;
+	display: grid;
+	width: 100%;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: 1fr;
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
+	grid-template-areas: '1 1'
+		'2 2';
+		.logo {
+			display: flex;
+			grid-area: 1;
+			width: 30vh;
 			height: auto;
+			margin: 0%;
 		}
-
-		a {
-			display: block;
-
-			width: 650px;
+		
+		.img-header {
+			display: flex;
+			justify-content: space-between;
+			grid-template-areas: 2;
+			width: 30vh;
+			vertical-align: center;
+			padding-left: 0%;
 			height: auto;
+			margin: 0%;
+		
 		}
-	}
 
 }
+

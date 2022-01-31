@@ -15,12 +15,10 @@
 
     <!-- Link al CSS -->
     <link rel="stylesheet" href="../css/style.css">
-
     <!-- Link a la fuente -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500&family=Raleway:ital,wght@0,300;1,500&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Oswald:wght@300;500&display=swap"
         rel="stylesheet">
 
     <title>OTC Marketing Digital Farmacéutico</title>
@@ -32,41 +30,44 @@
 
 <body>
     <!--Header Container-->
-    <header class="container-fluid header">
-        <div class="row">
-            <!--Logo linkeado al Index-->
-            <div class="col-12 col-md-3 logo">
-                <a href="../Index.html">
-                    <img src="../images/OTCLogo.png" />
-                </a>
-            </div>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <!--Link al index en Logo-->
+                <a href="../index.html">
 
+                <!--Link al Logo-->
+                <img class="logo" src="../images/OTCLogo.png" alt="Inicio">
+            </a>
+            </div>
+            <div class="img-header">
+                <img src="../images/health.png" alt="imagen productos varios">
+
+            </div>
         </div>
+
     </header>
     <!--Fin del Header-->
     <!--Título Principal-->
     <div>
         <h1 class="title">Especializado en la Industria Farmacéutica</h1>
     </div>
-
     <!--Desarrollo del NAV-->
-    <nav>
-        <!--Menú Hamburguesa-->
-        <div class="dropdown d-grid gap-1">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2"
-                data-bs-toggle="dropdown" aria-expanded="false">
-                <img src="../images/hamburguesa.png" alt="menu hamburguesa">
+    <!--Menú Hamburguesa-->
 
-            </button>
-            <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="dropdownMenuButton2">
-                <li><a class="dropdown-item active" href="../pages/quienes.html">Quiénes somos</a></li>
-                <li><a class="dropdown-item" href="../pages/servicios.html">Servicios</a></li>
-                <li><a class="dropdown-item" href="../pages/portfolio.html">Portfolio</a></li>
-                <li><a class="dropdown-item" href="../pages/contacto.html">Contacto</a></li>
-                <li><a class="dropdown-item" href="../pages/suscripcion.html">Suscripción</a></li>
-            </ul>
-        </div>
+    <nav>
+        <input type="checkbox" id="menu">
+        <label for="menu"> <img src="../images/hamburguesa.png" alt="menu hamburguesa" width="50" height="50"></label>
+
+        <ul>
+            <li><a class="a-menu" href="../pages/quienes.html">Quienes somos</a></li>
+            <li><a class="a-menu" href="../pages/servicios.html">Servicios</a></li>
+            <li><a class="a-menu" href="../pages/portfolio.html">Portfolio</a></li>
+            <li><a class="a-menu" href="../pages/suscripcion.html">Suscripción</a></li>
+            <li><a class="a-menu" href="../pages/contacto.html">Contacto</a></li>
+        </ul>
     </nav>
+
     <!--Fin del NAV-->
 
     <!--Sección central-->
@@ -74,7 +75,7 @@
         <!--Galería de imágenes-->
         <section>
 
-            <p> Algunos de nuestros trabajos</p>
+            <p class="p-portfolio"> Algunos de nuestros trabajos</p>
 
             <div class="carousel-container">
                 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">

@@ -1,3 +1,5 @@
+@import '../base/variables';
+
 /* Ajustes Iframe mapa google contacto y efecto */
 
 .mapa-google {
@@ -9,7 +11,7 @@
 		position: absolute;
 		top: 0;
 		left: 0;
-		width: 100%;
+		width: 50%;
 		height: 100%;
 		margin: 0 auto;
 	}
@@ -18,6 +20,7 @@
 	flex-direction: row;
 	position: relative;
 	transition: all .5s ease-out;
+	margin-left: 35%;
 	padding-bottom: 56.25%;
 	height: 0;
 	overflow: hidden;

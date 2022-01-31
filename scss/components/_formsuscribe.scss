@@ -1,12 +1,38 @@
+@import '../base/variables';
+
 /* Formulario de Suscripción */
 
 .contenedor-suscribe {
-	display: inline-block;
+	display: block;
+	justify-content: center;
 }
+
 .form-control {
 	&:focus {
-		background-color: goldenrod;
+		background-color: $bg-color3;
 		font-weight: bolder;
 	}
 }
 
+.form-control {
+	font-size: $font-medium;
+}
+
+.input-group-text {
+	align-items: center;
+
+}
+
+h2 {
+	font-size: $font-large;
+}
+
+section {
+	display: inline-block;
+	margin-left: 0%;
+
+}
+
+.btn-primary {
+	margin-top: 1em;
+}
