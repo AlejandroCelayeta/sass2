@@ -3,9 +3,11 @@
 /* Formulario de Suscripción */
 
 .contenedor-suscribe {
-	display: block;
+	display: flex;
+	align-items: center;
 	justify-content: center;
 }
+
 
 .form-control {
 	&:focus {
@@ -23,15 +25,7 @@
 
 }
 
-h2 {
-	font-size: $font-large;
-}
 
-section {
-	display: inline-block;
-	margin-left: 0%;
-
-}
 
 .btn-primary {
 	margin-top: 1em;

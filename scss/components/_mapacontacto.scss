@@ -2,28 +2,23 @@
 
 /* Ajustes Iframe mapa google contacto y efecto */
 
+
 .mapa-google {
 	&:hover {
 		transform: scale(1.1);
+
+		.mapa-google iframe {
+			display: column;
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+			top: 0%;
+			left: 0%;
+			width: 100%;
+			height: 100%;
+			padding-bottom: 10%;
+			margin-bottom: 30%;
+
+		}
 	}
-
-	iframe {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 50%;
-		height: 100%;
-		margin: 0 auto;
-	}
-
-	display: flex;
-	flex-direction: row;
-	position: relative;
-	transition: all .5s ease-out;
-	margin-left: 35%;
-	padding-bottom: 56.25%;
-	height: 0;
-	overflow: hidden;
-	align-items: center;
-
 }

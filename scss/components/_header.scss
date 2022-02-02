@@ -4,6 +4,27 @@
 
 /* Header */
 .header-container {
+	.logo {
+		display: flex;
+		grid-area: 1;
+		width: 50vh;
+		height: auto;
+		margin: 0%;
+		margin-left: 3%;
+	}
+
+	.img-header {
+		display: flex;
+		justify-content: space-between;
+		grid-template-areas: 2;
+		width: 25vh;
+		vertical-align: center;
+		padding-left: 10%;
+		height: auto;
+		margin: 0%;
+
+	}
+
 	display: grid;
 	width: 100%;
 	grid-template-columns: repeat(2, 1fr);
@@ -11,26 +32,5 @@
 	grid-column-gap: 0px;
 	grid-row-gap: 0px;
 	grid-template-areas: '1 1'
-		'2 2';
-}
-
-.logo {
-	display: flex;
-	grid-area: 1;
-	width: 30vh;
-	height: auto;
-	margin: 0%;
-	margin-left: 3%;
-}
-
-.img-header {
-	display: flex;
-	justify-content: space-between;
-	grid-template-areas: 2;
-	width: 25vh;
-	vertical-align: center;
-	padding-left: 10%;
-	height: auto;
-	margin: 0%;
-
+	'2 2';
 }

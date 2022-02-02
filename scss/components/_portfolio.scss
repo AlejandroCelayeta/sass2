@@ -3,6 +3,9 @@
 /* Portfolio y efectos */
 
 .carousel-container {
+	.p-portfolio{
+		text-align: center;
+	}
 
 	.carousel-control-prev-icon,
 	.carousel-control-next-icon {
@@ -15,17 +18,12 @@
 		border: 1px solid black;
 	}
 
+	display: flex;
+	height: 100%;
 	width: 100%;
-	display: block;
-	margin: 4px;
+	flex-direction: row;
+	align-items: center;
 	justify-content: center;
+	align-items: center;
 	padding-bottom: 5%;
-}
-
-.p-portfolio {
-	margin: 0%;
-	font-size: $font-medium;
-	padding: 10%;
-	padding-bottom: 2%;
-	width: 100%;
 }

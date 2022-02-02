@@ -35,17 +35,15 @@
   grid-row-gap: 0px;
   grid-template-areas: "1 1" "2 2";
 }
-
-.logo {
+.header-container .logo {
   display: flex;
   grid-area: 1;
-  width: 30vh;
+  width: 50vh;
   height: auto;
   margin: 0%;
   margin-left: 3%;
 }
-
-.img-header {
+.header-container .img-header {
   display: flex;
   justify-content: space-between;
   grid-template-areas: 2;
@@ -95,11 +93,6 @@
   }
   body p {
     color: #0e0a0a;
-  }
-  body h2 {
-    font-size: 1em;
-  }
-  body p {
     font-size: 1.2em;
   }
 }
@@ -107,28 +100,22 @@
   body a {
     text-decoration: none;
   }
-  body a h2 {
-    font-size: 0.8em;
-    color: #0e0a0a;
-    font-weight: bold;
-    padding-top: 2em;
-    padding-bottom: 1em;
-  }
 }
-body .body-suscripcion,
-body .body-servicios {
-  display: grid;
-}
-body p {
-  display: block;
-  width: 90%;
-  font-size: 1.4em;
-  font-weight: bold;
-  color: #0e0a0a;
-  font-family: "Raleway", sans-serif;
-  padding-top: 5%;
-  padding-left: 30%;
+
+.container {
+  display: flex;
+  height: 80%;
+  width: 80%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding-bottom: 15%;
+  overflow: hidden;
+  align-items: center;
 }
 
 /* Variables */
@@ -203,21 +190,22 @@ li:hover {
 /* Variables de colores fuente */
 /* Variables de colores */
 /*Propiedades del footer*/
-h3 {
+.p-seguir {
   font-size: 1em;
   font-weight: bold;
   color: #0e0a0a;
-  text-align: left;
   padding-top: 0%;
   padding-bottom: 0.5%;
+  padding-right: 10%;
   margin-top: 2.5em;
+  margin: -5%;
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
-  h3 {
+  .p-seguir {
     color: #8d0f35;
   }
 }
-h3:hover {
+.p-seguir:hover {
   transform: scale(1.1);
   color: #8d0f35;
 }
@@ -255,6 +243,7 @@ h3:hover {
   text-align: center;
   padding-bottom: 0.1%;
   padding: 0%;
+  margin-right: 11%;
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
   .parrafo-copy {
@@ -296,7 +285,8 @@ h3:hover {
 /* Variables de colores */
 /* Formulario de Suscripción */
 .contenedor-suscribe {
-  display: block;
+  display: flex;
+  align-items: center;
   justify-content: center;
 }
 
@@ -313,15 +303,6 @@ h3:hover {
   align-items: center;
 }
 
-h2 {
-  font-size: 1.2em;
-}
-
-section {
-  display: inline-block;
-  margin-left: 0%;
-}
-
 .btn-primary {
   margin-top: 1em;
 }
@@ -332,11 +313,17 @@ section {
 /* Variables de colores */
 /* Portfolio y efectos */
 .carousel-container {
+  display: flex;
+  height: 100%;
   width: 100%;
-  display: block;
-  margin: 4px;
+  flex-direction: row;
+  align-items: center;
   justify-content: center;
+  align-items: center;
   padding-bottom: 5%;
+}
+.carousel-container .p-portfolio {
+  text-align: center;
 }
 .carousel-container .carousel-control-prev-icon,
 .carousel-container .carousel-control-next-icon {
@@ -349,40 +336,25 @@ section {
   border: 1px solid black;
 }
 
-.p-portfolio {
-  margin: 0%;
-  font-size: 1em;
-  padding: 10%;
-  padding-bottom: 2%;
-  width: 100%;
-}
-
 /* Variables */
 /* Variables de tamaño de fuentes */
 /* Variables de colores fuente */
 /* Variables de colores */
 /* Ajustes Iframe mapa google contacto y efecto */
-.mapa-google {
-  display: flex;
-  flex-direction: row;
-  position: relative;
-  transition: all 0.5s ease-out;
-  margin-left: 35%;
-  padding-bottom: 56.25%;
-  height: 0;
-  overflow: hidden;
-  align-items: center;
-}
 .mapa-google:hover {
   transform: scale(1.1);
 }
-.mapa-google iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 50%;
+.mapa-google:hover .mapa-google iframe {
+  display: column;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  top: 0%;
+  left: 0%;
+  width: 100%;
   height: 100%;
-  margin: 0 auto;
+  padding-bottom: 10%;
+  margin-bottom: 30%;
 }
 
 /* Reset CSS */
@@ -424,11 +396,6 @@ section {
   }
   body p {
     color: #0e0a0a;
-  }
-  body h2 {
-    font-size: 1em;
-  }
-  body p {
     font-size: 1.2em;
   }
 }
@@ -436,28 +403,22 @@ section {
   body a {
     text-decoration: none;
   }
-  body a h2 {
-    font-size: 0.8em;
-    color: #0e0a0a;
-    font-weight: bold;
-    padding-top: 2em;
-    padding-bottom: 1em;
-  }
 }
-body .body-suscripcion,
-body .body-servicios {
-  display: grid;
-}
-body p {
-  display: block;
-  width: 90%;
-  font-size: 1.4em;
-  font-weight: bold;
-  color: #0e0a0a;
-  font-family: "Raleway", sans-serif;
-  padding-top: 5%;
-  padding-left: 30%;
+
+.container {
+  display: flex;
+  height: 80%;
+  width: 80%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding-bottom: 15%;
+  overflow: hidden;
+  align-items: center;
 }
 
 /* Variables */
@@ -474,17 +435,15 @@ body p {
   grid-row-gap: 0px;
   grid-template-areas: "1 1" "2 2";
 }
-
-.logo {
+.header-container .logo {
   display: flex;
   grid-area: 1;
-  width: 30vh;
+  width: 50vh;
   height: auto;
   margin: 0%;
   margin-left: 3%;
 }
-
-.img-header {
+.header-container .img-header {
   display: flex;
   justify-content: space-between;
   grid-template-areas: 2;
@@ -567,25 +526,16 @@ li:hover {
 /* Variables de colores fuente */
 /* Variables de colores */
 /*Ajustes del Main*/
+.container {
+  box-sizing: border-box;
+  width: 80%;
+  padding: 8px;
+  margin: auto;
+}
 @media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
-  .main {
-    text-align: center;
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 0.8em;
-    color: #616060;
-    overflow: hidden;
-    padding: top 20%;
-  }
-  .main * {
+  .container * {
     color: #8d0f35;
     font-weight: bolder;
-  }
-  .main p {
-    padding: top 20%;
-    text-align: center;
-    color: #8d0f35;
   }
 }
 
@@ -595,11 +545,17 @@ li:hover {
 /* Variables de colores */
 /* Portfolio y efectos */
 .carousel-container {
+  display: flex;
+  height: 100%;
   width: 100%;
-  display: block;
-  margin: 4px;
+  flex-direction: row;
+  align-items: center;
   justify-content: center;
+  align-items: center;
   padding-bottom: 5%;
+}
+.carousel-container .p-portfolio {
+  text-align: center;
 }
 .carousel-container .carousel-control-prev-icon,
 .carousel-container .carousel-control-next-icon {
@@ -612,40 +568,25 @@ li:hover {
   border: 1px solid black;
 }
 
-.p-portfolio {
-  margin: 0%;
-  font-size: 1em;
-  padding: 10%;
-  padding-bottom: 2%;
-  width: 100%;
-}
-
 /* Variables */
 /* Variables de tamaño de fuentes */
 /* Variables de colores fuente */
 /* Variables de colores */
 /* Ajustes Iframe mapa google contacto y efecto */
-.mapa-google {
-  display: flex;
-  flex-direction: row;
-  position: relative;
-  transition: all 0.5s ease-out;
-  margin-left: 35%;
-  padding-bottom: 56.25%;
-  height: 0;
-  overflow: hidden;
-  align-items: center;
-}
 .mapa-google:hover {
   transform: scale(1.1);
 }
-.mapa-google iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 50%;
+.mapa-google:hover .mapa-google iframe {
+  display: column;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  top: 0%;
+  left: 0%;
+  width: 100%;
   height: 100%;
-  margin: 0 auto;
+  padding-bottom: 10%;
+  margin-bottom: 30%;
 }
 
 /* Variables */
@@ -653,21 +594,22 @@ li:hover {
 /* Variables de colores fuente */
 /* Variables de colores */
 /*Propiedades del footer*/
-h3 {
+.p-seguir {
   font-size: 1em;
   font-weight: bold;
   color: #0e0a0a;
-  text-align: left;
   padding-top: 0%;
   padding-bottom: 0.5%;
+  padding-right: 10%;
   margin-top: 2.5em;
+  margin: -5%;
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
-  h3 {
+  .p-seguir {
     color: #8d0f35;
   }
 }
-h3:hover {
+.p-seguir:hover {
   transform: scale(1.1);
   color: #8d0f35;
 }
@@ -705,6 +647,7 @@ h3:hover {
   text-align: center;
   padding-bottom: 0.1%;
   padding: 0%;
+  margin-right: 11%;
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
   .parrafo-copy {
@@ -744,35 +687,12 @@ h3:hover {
 /* Variables de tamaño de fuentes */
 /* Variables de colores fuente */
 /* Variables de colores */
-/* Ajuste de párrafos servicios */
-.p-servicios {
-  padding: 0%;
-  width: 100%;
-  height: auto;
-}
-
-/* Variables */
-/* Variables de tamaño de fuentes */
-/* Variables de colores fuente */
-/* Variables de colores */
 /* Ajustes párrafo contacto */
-.p-contacto {
-  line-height: 2%;
-  padding-left: 10%;
-  width: 90%;
-}
-
 /* Variables */
 /* Variables de tamaño de fuentes */
 /* Variables de colores fuente */
 /* Variables de colores */
 /* Ajustes párrafos quienes */
-.p-quienes {
-  margin: 2%;
-  line-height: 100%;
-  width: 70%;
-}
-
 /* Variables */
 /* Variables de tamaño de fuentes */
 /* Variables de colores fuente */

@@ -4,7 +4,7 @@
 /*Propiedades del footer*/
 
 
-h3 {
+.p-seguir {
 
 	@media only screen and (min-device-width : 320px) and (max-device-width : 767px) {
 		color: $font-color3;
@@ -13,10 +13,11 @@ h3 {
 	font-size: $font-medium;
 	font-weight: bold;
 	color: $font-color1;
-	text-align: left;
 	padding-top: 0%;
 	padding-bottom: 0.5%;
+	padding-right: 10%;
 	margin-top: 2.5em;
+	margin: -5%;
 
 	&:hover {
 		transform: scale(1.1);
@@ -63,6 +64,7 @@ h3 {
 	text-align: center;
 	padding-bottom: 0.1%;
 	padding: 0%;
+	margin-right: 11%;
 }
 
 .footer-redes {
@@ -79,25 +81,23 @@ h3 {
 	grid-template-areas: 'a a'
 	'b c'
 	'd d';
-.fb {
-	margin: 0%;
-	padding: 0%;
-	justify-self: center;
-	grid-area: b;
+
+	.fb {
+		margin: 0%;
+		padding: 0%;
+		justify-self: center;
+		grid-area: b;
+	}
+
+	.ln {
+		justify-self: center;
+		grid-area: c;
+
+	}
+
+	.copy-r {
+		grid-area: d;
+		text-align: center;
+		margin-left: 10%;
+	}
 }
-
-.ln {
-	justify-self: center;
-	grid-area: c;
-
-}
-
-.copy-r {
-	grid-area: d;
-	text-align: center;
-	margin-left: 10%;
-}	
-}
-
-
-

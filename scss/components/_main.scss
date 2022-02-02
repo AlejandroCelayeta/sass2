@@ -1,28 +1,16 @@
 @import '../base/variables';
 /*Ajustes del Main*/
 
-.main {
+.container {
+    box-sizing: border-box;
+    width: 80%;
+    padding: 8px;
+    margin: auto;
+
     @media only screen and (min-device-width : 320px) and (max-device-width : 1024px) {
         * {
             color: $color3;
             font-weight: bolder;
         }
-
-        p {
-            padding: top 20%;
-            text-align: center;
-            color: $color3;
-        }
-
-
-
-        text-align: center;
-        width: 70%;
-        margin-left: auto;
-        margin-right: auto;
-        font-size: $font-small;
-        color: $color4;
-        overflow: hidden;
-        padding: top 20%;
     }
 }
