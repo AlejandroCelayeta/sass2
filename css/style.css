@@ -10,50 +10,6 @@
 /* Variables de tamaño de fuentes */
 /* Variables de colores fuente */
 /* Variables de colores */
-/* Título */
-.title {
-  display: block;
-  text-align: left;
-  font-size: 1.4em;
-  font-weight: bolder;
-  padding-top: 0%;
-  padding-left: 10%;
-  color: black;
-}
-
-/* Variables */
-/* Variables de tamaño de fuentes */
-/* Variables de colores fuente */
-/* Variables de colores */
-/* Header */
-.header-container {
-  display: grid;
-  width: 100%;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-  grid-template-areas: "1 1" "2 2";
-}
-.header-container .logo {
-  display: flex;
-  grid-area: 1;
-  width: 50vh;
-  height: auto;
-  margin: 0%;
-  margin-left: 3%;
-}
-.header-container .img-header {
-  display: flex;
-  justify-content: space-between;
-  grid-template-areas: 2;
-  width: 25vh;
-  vertical-align: center;
-  padding-left: 10%;
-  height: auto;
-  margin: 0%;
-}
-
 /* Reset CSS */
 * {
   margin: 0%;
@@ -66,123 +22,70 @@
 /* Variables de colores fuente */
 /* Variables de colores */
 /* Body */
-/*Parámetros media query*/
+main {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  text-align: center;
+  padding-top: 5%;
+  padding-right: 17%;
+  padding-left: 17%;
+}
 @media only screen and (min-device-width: 480px) and (max-device-width: 1024px) {
-  body {
+  main body {
     /* Parámetros del body */
-    background-color: #dddaa2;
     font-family: "Fredoka One", cursive;
     font-family: "Oswald", sans-serif;
     color: #0e0a0a;
     text-align: center;
-    overflow-x: hidden;
-    box-sizing: content-box;
+    box-sizing: border-box;
+    justify-content: center;
   }
-  body * {
-    background-color: #fffefe;
-    font-size: 1.2em;
+  main body * {
+    background-color: #00805a;
+    font-size: 1em;
     font-weight: bolder;
     color: #0c4720;
   }
+  main body * .menu {
+    background-color: #00805a;
+  }
 }
 @media only screen and (min-device-width: 480px) and (max-device-width: 1024px) and (min-device-width: 320px) and (max-device-width: 479px) {
-  body * {
-    background-color: #fffefe;
-    font-size: 1em;
+  main body {
+    /* Container Body */
+  }
+  main body * {
+    background-color: #00805a;
+    font-size: 0.8em;
     font-weight: bolder;
   }
-  body p {
+  main body .container {
+    box-sizing: content-box;
+    padding: 8px;
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    text-align: center;
+    width: 60%;
+    height: 100%;
+    padding-bottom: 10%;
+  }
+  main body .container p {
     color: #0e0a0a;
     font-size: 1.2em;
   }
 }
 @media only screen and (min-device-width: 480px) and (max-device-width: 1024px) {
-  body a {
+  main body a {
     text-decoration: none;
   }
-}
-
-.container {
-  display: flex;
-  height: 80%;
-  width: 80%;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding-bottom: 15%;
-  overflow: hidden;
-  align-items: center;
-}
-
-/* Variables */
-/* Variables de tamaño de fuentes */
-/* Variables de colores fuente */
-/* Variables de colores */
-/* Menú hamburguesa */
-/*Estilos del menú*/
-.menu {
-  display: grid;
-}
-
-ul {
-  display: none;
-}
-
-input:checked ~ ul {
-  display: table-cell;
-  margin-left: 20%;
-}
-
-input {
-  display: none;
-}
-
-label {
-  box-sizing: border-box;
-  display: grid;
-  width: 48px;
-  height: 48px;
-  line-height: 48px;
-  font-weight: bold;
-  text-align: center;
-  user-select: none;
-}
-
-/* Estilo del boton cuando se pasa el mouse por encima*/
-label:hover {
-  background: #dddda2;
-}
-
-/* Estilo del boton cuando el menú está expandido*/
-input:checked ~ label {
-  background: #f4f1bb;
-}
-
-ul {
-  margin-top: 1px;
-  padding: 1px;
-  width: 200px;
-}
-
-li {
-  display: block;
-  background: #6567ab;
-  margin: 3%;
-  padding: 10px;
-  border-bottom: 2px solid grey;
-}
-
-li a {
-  color: black;
-}
-
-/*Estilo cuando el mouse pasa encima de cada link del menu*/
-li:hover {
-  filter: brightness(110%);
 }
 
 /* Variables */
@@ -200,9 +103,14 @@ li:hover {
   margin-top: 2.5em;
   margin: -5%;
 }
-@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+@media only screen and (min-device-width: 480px) and (max-device-width: 1024px) {
   .p-seguir {
     color: #8d0f35;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+  .p-seguir {
+    color: #060b52;
   }
 }
 .p-seguir:hover {
@@ -311,120 +219,6 @@ li:hover {
 /* Variables de tamaño de fuentes */
 /* Variables de colores fuente */
 /* Variables de colores */
-/* Portfolio y efectos */
-.carousel-container {
-  display: flex;
-  height: 100%;
-  width: 100%;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 5%;
-}
-.carousel-container .p-portfolio {
-  text-align: center;
-}
-.carousel-container .carousel-control-prev-icon,
-.carousel-container .carousel-control-next-icon {
-  height: 25px;
-  width: 25px;
-  outline: black;
-  background-color: rgba(0, 0, 0, 0.3);
-  background-size: 100%, 100%;
-  border-radius: 50%;
-  border: 1px solid black;
-}
-
-/* Variables */
-/* Variables de tamaño de fuentes */
-/* Variables de colores fuente */
-/* Variables de colores */
-/* Ajustes Iframe mapa google contacto y efecto */
-.mapa-google:hover {
-  transform: scale(1.1);
-}
-.mapa-google:hover .mapa-google iframe {
-  display: column;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  top: 0%;
-  left: 0%;
-  width: 100%;
-  height: 100%;
-  padding-bottom: 10%;
-  margin-bottom: 30%;
-}
-
-/* Reset CSS */
-* {
-  margin: 0%;
-  padding: 0%;
-  box-sizing: border-box;
-}
-
-/* Variables */
-/* Variables de tamaño de fuentes */
-/* Variables de colores fuente */
-/* Variables de colores */
-/* Body */
-/*Parámetros media query*/
-@media only screen and (min-device-width: 480px) and (max-device-width: 1024px) {
-  body {
-    /* Parámetros del body */
-    background-color: #dddaa2;
-    font-family: "Fredoka One", cursive;
-    font-family: "Oswald", sans-serif;
-    color: #0e0a0a;
-    text-align: center;
-    overflow-x: hidden;
-    box-sizing: content-box;
-  }
-  body * {
-    background-color: #fffefe;
-    font-size: 1.2em;
-    font-weight: bolder;
-    color: #0c4720;
-  }
-}
-@media only screen and (min-device-width: 480px) and (max-device-width: 1024px) and (min-device-width: 320px) and (max-device-width: 479px) {
-  body * {
-    background-color: #fffefe;
-    font-size: 1em;
-    font-weight: bolder;
-  }
-  body p {
-    color: #0e0a0a;
-    font-size: 1.2em;
-  }
-}
-@media only screen and (min-device-width: 480px) and (max-device-width: 1024px) {
-  body a {
-    text-decoration: none;
-  }
-}
-
-.container {
-  display: flex;
-  height: 80%;
-  width: 80%;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding-bottom: 15%;
-  overflow: hidden;
-  align-items: center;
-}
-
-/* Variables */
-/* Variables de tamaño de fuentes */
-/* Variables de colores fuente */
-/* Variables de colores */
 /* Header */
 .header-container {
   display: grid;
@@ -438,7 +232,7 @@ li:hover {
 .header-container .logo {
   display: flex;
   grid-area: 1;
-  width: 50vh;
+  width: 30vh;
   height: auto;
   margin: 0%;
   margin-left: 3%;
@@ -452,6 +246,16 @@ li:hover {
   padding-left: 10%;
   height: auto;
   margin: 0%;
+}
+@media only screen and (min-device-width: 480px) and (max-device-width: 1024px) {
+  .header-container .img-header {
+    display: none;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+  .header-container .img-header {
+    display: none;
+  }
 }
 
 /* Variables */
@@ -490,12 +294,12 @@ label {
 
 /* Estilo del boton cuando se pasa el mouse por encima*/
 label:hover {
-  background: #dddda2;
+  background: #fffefe;
 }
 
 /* Estilo del boton cuando el menú está expandido*/
 input:checked ~ label {
-  background: #f4f1bb;
+  background: #fffefe;
 }
 
 ul {
@@ -507,13 +311,16 @@ ul {
 li {
   display: block;
   background: #6567ab;
+  text-align: center;
   margin: 3%;
-  padding: 10px;
-  border-bottom: 2px solid grey;
+  padding: 8px;
+  border-bottom: 3px solid #060b52;
+  border-radius: 4px;
+  font-weight: bolder;
 }
 
 li a {
-  color: black;
+  color: #0e0a0a;
 }
 
 /*Estilo cuando el mouse pasa encima de cada link del menu*/
@@ -525,18 +332,91 @@ li:hover {
 /* Variables de tamaño de fuentes */
 /* Variables de colores fuente */
 /* Variables de colores */
-/*Ajustes del Main*/
-.container {
-  box-sizing: border-box;
-  width: 80%;
-  padding: 8px;
-  margin: auto;
+/* Ajustes Iframe mapa google contacto y efecto */
+.mapa-google:hover {
+  transform: scale(1.1);
 }
-@media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
-  .container * {
-    color: #8d0f35;
-    font-weight: bolder;
-  }
+.mapa-google:hover .mapa-google iframe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 10%;
+  margin-bottom: 30%;
+}
+
+/* Variables */
+/* Variables de tamaño de fuentes */
+/* Variables de colores fuente */
+/* Variables de colores */
+/* Menú hamburguesa */
+/*Estilos del menú*/
+.menu {
+  display: grid;
+}
+
+ul {
+  display: none;
+}
+
+input:checked ~ ul {
+  display: table-cell;
+  margin-left: 20%;
+}
+
+input {
+  display: none;
+}
+
+label {
+  box-sizing: border-box;
+  display: grid;
+  width: 48px;
+  height: 48px;
+  line-height: 48px;
+  font-weight: bold;
+  text-align: center;
+  user-select: none;
+}
+
+/* Estilo del boton cuando se pasa el mouse por encima*/
+label:hover {
+  background: #fffefe;
+}
+
+/* Estilo del boton cuando el menú está expandido*/
+input:checked ~ label {
+  background: #fffefe;
+}
+
+ul {
+  margin-top: 1px;
+  padding: 1px;
+  width: 200px;
+}
+
+li {
+  display: block;
+  background: #6567ab;
+  text-align: center;
+  margin: 3%;
+  padding: 8px;
+  border-bottom: 3px solid #060b52;
+  border-radius: 4px;
+  font-weight: bolder;
+}
+
+li a {
+  color: #0e0a0a;
+}
+
+/*Estilo cuando el mouse pasa encima de cada link del menu*/
+li:hover {
+  filter: brightness(110%);
 }
 
 /* Variables */
@@ -561,141 +441,26 @@ li:hover {
 .carousel-container .carousel-control-next-icon {
   height: 25px;
   width: 25px;
-  outline: black;
+  outline: #0e0a0a;
   background-color: rgba(0, 0, 0, 0.3);
   background-size: 100%, 100%;
   border-radius: 50%;
-  border: 1px solid black;
+  border: 1px solid #0e0a0a;
 }
 
 /* Variables */
 /* Variables de tamaño de fuentes */
 /* Variables de colores fuente */
 /* Variables de colores */
-/* Ajustes Iframe mapa google contacto y efecto */
-.mapa-google:hover {
-  transform: scale(1.1);
-}
-.mapa-google:hover .mapa-google iframe {
-  display: column;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  top: 0%;
-  left: 0%;
-  width: 100%;
-  height: 100%;
-  padding-bottom: 10%;
-  margin-bottom: 30%;
-}
-
-/* Variables */
-/* Variables de tamaño de fuentes */
-/* Variables de colores fuente */
-/* Variables de colores */
-/*Propiedades del footer*/
-.p-seguir {
-  font-size: 1em;
-  font-weight: bold;
-  color: #0e0a0a;
+/* Título */
+.title {
+  display: block;
+  text-align: left;
+  font-size: 1.4em;
+  font-weight: bolder;
   padding-top: 0%;
-  padding-bottom: 0.5%;
-  padding-right: 10%;
-  margin-top: 2.5em;
-  margin: -5%;
-}
-@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
-  .p-seguir {
-    color: #8d0f35;
-  }
-}
-.p-seguir:hover {
-  transform: scale(1.1);
-  color: #8d0f35;
-}
-
-.linkedin {
-  display: block;
-  margin-left: 0.5em;
-  margin-bottom: 0.6em;
-  padding-top: 0.2em;
-  width: 50px;
-  height: auto;
-}
-.linkedin:hover {
-  transition: 2.3s;
-  transform: rotate(360deg);
-}
-
-.facebook {
-  display: block;
-  margin-left: 0.5em;
-  margin-bottom: 0.2em;
-  padding: 0.2em;
-  width: 60px;
-  height: auto;
-}
-.facebook:hover {
-  transition: 2.3s;
-  transform: rotate(360deg);
-}
-
-.parrafo-copy {
-  font-size: 0.8em;
-  font-weight: bold;
+  padding-left: 10%;
   color: #0e0a0a;
-  text-align: center;
-  padding-bottom: 0.1%;
-  padding: 0%;
-  margin-right: 11%;
 }
-@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
-  .parrafo-copy {
-    color: #8d0f35;
-  }
-}
-
-.footer-redes {
-  max-width: 100%;
-  display: grid;
-  grid-template-areas: "a a" "b c" "d d";
-}
-.footer-redes .f-head {
-  margin: 0%;
-  padding-top: 20%;
-  text-align: center;
-  justify-self: center;
-  grid-area: a;
-}
-.footer-redes .fb {
-  margin: 0%;
-  padding: 0%;
-  justify-self: center;
-  grid-area: b;
-}
-.footer-redes .ln {
-  justify-self: center;
-  grid-area: c;
-}
-.footer-redes .copy-r {
-  grid-area: d;
-  text-align: center;
-  margin-left: 10%;
-}
-
-/* Variables */
-/* Variables de tamaño de fuentes */
-/* Variables de colores fuente */
-/* Variables de colores */
-/* Ajustes párrafo contacto */
-/* Variables */
-/* Variables de tamaño de fuentes */
-/* Variables de colores fuente */
-/* Variables de colores */
-/* Ajustes párrafos quienes */
-/* Variables */
-/* Variables de tamaño de fuentes */
-/* Variables de colores fuente */
-/* Variables de colores */
 
 /*# sourceMappingURL=style.css.map */

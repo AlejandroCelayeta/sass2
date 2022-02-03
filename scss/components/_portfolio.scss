@@ -3,7 +3,7 @@
 /* Portfolio y efectos */
 
 .carousel-container {
-	.p-portfolio{
+	.p-portfolio {
 		text-align: center;
 	}
 
@@ -11,11 +11,11 @@
 	.carousel-control-next-icon {
 		height: 25px;
 		width: 25px;
-		outline: black;
-		background-color: rgba(0, 0, 0, 0.3);
+		outline: $color1;
+		background-color: $bg-color9;
 		background-size: 100%, 100%;
 		border-radius: 50%;
-		border: 1px solid black;
+		border: 1px solid $color1;
 	}
 
 	display: flex;

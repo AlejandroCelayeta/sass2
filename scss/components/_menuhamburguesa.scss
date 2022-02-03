@@ -5,7 +5,9 @@
 /*Estilos del menú*/
 .menu {
     display: grid;
+
 }
+
 
 ul {
     display: none;
@@ -33,13 +35,13 @@ label {
 
 /* Estilo del boton cuando se pasa el mouse por encima*/
 label:hover {
-    background: rgb(221, 221, 162);
+    background: $bg-color8;
 
 }
 
 /* Estilo del boton cuando el menú está expandido*/
 input:checked~label {
-    background: #f4f1bb;
+    background: $bg-color8;
 }
 
 ul {
@@ -51,14 +53,17 @@ ul {
 
 li {
     display: block;
-    background: #6567ab;
+    background: $bg-color2;
+    text-align: center;
     margin: 3%;
-    padding: 10px;
-    border-bottom: 2px solid grey;
+    padding: 8px;
+    border-bottom: 3px solid $color4;
+    border-radius: 4px;
+    font-weight: bolder;
 }
 
 li a {
-    color: black;
+    color: $font-color1;
 }
 
 /*Estilo cuando el mouse pasa encima de cada link del menu*/

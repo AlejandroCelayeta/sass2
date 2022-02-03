@@ -3,12 +3,16 @@
 
 /*Propiedades del footer*/
 
-
 .p-seguir {
-
-	@media only screen and (min-device-width : 320px) and (max-device-width : 767px) {
+	@media only screen and (min-device-width : 480px) and (max-device-width : 1024px) {
 		color: $font-color3;
 	}
+
+	@media only screen and (min-device-width : 320px) and (max-device-width : 767px) {
+		color: $font-color4;
+
+	}
+
 
 	font-size: $font-medium;
 	font-weight: bold;
