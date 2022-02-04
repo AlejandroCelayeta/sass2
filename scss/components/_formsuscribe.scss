@@ -10,14 +10,20 @@
 
 
 .form-control {
+	&:hover {
+		background-color: map-get($bg, bgcolor-uno);
+	}
+
 	&:focus {
-		background-color: $bg-color3;
+		background-color: map-get($bg, bgcolor-dos);
 		font-weight: bolder;
 	}
 }
 
 .form-control {
 	font-size: $font-medium;
+	color: $font-color5;
+	background-color: map-get($bg, bgcolor-tres);
 }
 
 .input-group-text {

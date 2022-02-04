@@ -4,12 +4,18 @@
 /* Título */
 
 .title {
-        display: block;
-        text-align: left;
-        font-size: 1.4em;
-        font-weight: bolder;
-        padding-top: 0%;
-        padding-left: 10%;
-        color: $color1;
-    }
 
+    display: block;
+    text-align: left;
+    font-size: 1.4em;
+    font-weight: bolder;
+    padding-top: 0%;
+    padding-left: 10%;
+    color: $color1;
+}
+
+/* Utilización de Mixin */
+.title {
+
+    @include border-titulo(2px ridge $color7);
+}

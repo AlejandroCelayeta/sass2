@@ -1,0 +1,5 @@
+/* Mixins */
+
+@mixin border-titulo ($valor) {
+    border: 2px ridge $color7;
+}

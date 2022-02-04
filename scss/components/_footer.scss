@@ -1,7 +1,11 @@
 @import '../base/variables';
-
+@import '../base/listas';
+@import '../base/mapas';
 
 /*Propiedades del footer*/
+footer {
+	@extend %footer;
+}
 
 .p-seguir {
 	@media only screen and (min-device-width : 480px) and (max-device-width : 1024px) {
@@ -20,7 +24,7 @@
 	padding-top: 0%;
 	padding-bottom: 0.5%;
 	padding-right: 10%;
-	margin-top: 2.5em;
+	margin-top: 0%;
 	margin: -5%;
 
 	&:hover {
@@ -74,7 +78,7 @@
 .footer-redes {
 	.f-head {
 		margin: 0%;
-		padding-top: 20%;
+		padding-top: 1%;
 		text-align: center;
 		justify-self: center;
 		grid-area: a;

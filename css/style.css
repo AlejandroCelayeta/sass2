@@ -6,17 +6,15 @@
   box-sizing: border-box;
 }
 
+/* Lista de colores de footer */
 /* Variables */
 /* Variables de tamaño de fuentes */
 /* Variables de colores fuente */
 /* Variables de colores */
-/* Reset CSS */
-* {
-  margin: 0%;
-  padding: 0%;
-  box-sizing: border-box;
-}
-
+/* Lista de colores de footer */
+/* Mapas */
+/* Mapa input mail suscribir */
+/* Mixins */
 /* Variables */
 /* Variables de tamaño de fuentes */
 /* Variables de colores fuente */
@@ -32,8 +30,8 @@ main {
   text-decoration: none;
   text-align: center;
   padding-top: 5%;
-  padding-right: 17%;
-  padding-left: 17%;
+  padding-right: 15%;
+  padding-left: 15%;
 }
 @media only screen and (min-device-width: 480px) and (max-device-width: 1024px) {
   main body {
@@ -88,10 +86,21 @@ main {
   }
 }
 
+/* Lista de colores de footer */
+/* Extends */
+footer {
+  background-color: #6567ab;
+  border: grey solid 1px;
+}
+
 /* Variables */
 /* Variables de tamaño de fuentes */
 /* Variables de colores fuente */
 /* Variables de colores */
+/* Lista de colores de footer */
+/* Lista de colores de footer */
+/* Mapas */
+/* Mapa input mail suscribir */
 /*Propiedades del footer*/
 .p-seguir {
   font-size: 1em;
@@ -100,7 +109,7 @@ main {
   padding-top: 0%;
   padding-bottom: 0.5%;
   padding-right: 10%;
-  margin-top: 2.5em;
+  margin-top: 0%;
   margin: -5%;
 }
 @media only screen and (min-device-width: 480px) and (max-device-width: 1024px) {
@@ -166,7 +175,7 @@ main {
 }
 .footer-redes .f-head {
   margin: 0%;
-  padding-top: 20%;
+  padding-top: 1%;
   text-align: center;
   justify-self: center;
   grid-area: a;
@@ -198,13 +207,18 @@ main {
   justify-content: center;
 }
 
-.form-control:focus {
+.form-control:hover {
   background-color: #a74190;
+}
+.form-control:focus {
+  background-color: #8d0f35;
   font-weight: bolder;
 }
 
 .form-control {
   font-size: 1em;
+  color: white;
+  background-color: #b14d4d;
 }
 
 .input-group-text {
@@ -232,7 +246,7 @@ main {
 .header-container .logo {
   display: flex;
   grid-area: 1;
-  width: 30vh;
+  width: 25vh;
   height: auto;
   margin: 0%;
   margin-left: 3%;
@@ -321,6 +335,7 @@ li {
 
 li a {
   color: #0e0a0a;
+  font-size: 0.8em;
 }
 
 /*Estilo cuando el mouse pasa encima de cada link del menu*/
@@ -333,20 +348,33 @@ li:hover {
 /* Variables de colores fuente */
 /* Variables de colores */
 /* Ajustes Iframe mapa google contacto y efecto */
-.mapa-google:hover {
-  transform: scale(1.1);
-}
-.mapa-google:hover .mapa-google iframe {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  top: 0%;
-  left: 0%;
-  width: 100%;
-  height: 100%;
-  padding-bottom: 10%;
-  margin-bottom: 30%;
+@media only screen and (min-device-width: 320px) and (max-device-width: 479px) {
+  .mapa-google * .mapa-google iframe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 0%;
+    left: 0%;
+    padding-bottom: 10%;
+    margin-bottom: 30%;
+  }
+  .mapa-google *:hover {
+    transform: scale(1.1);
+  }
+  .mapa-google *:hover iframe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 10%;
+    margin-bottom: 30%;
+    padding-top: 5%;
+  }
 }
 
 /* Variables */
@@ -412,6 +440,7 @@ li {
 
 li a {
   color: #0e0a0a;
+  font-size: 0.8em;
 }
 
 /*Estilo cuando el mouse pasa encima de cada link del menu*/
@@ -461,6 +490,11 @@ li:hover {
   padding-top: 0%;
   padding-left: 10%;
   color: #0e0a0a;
+}
+
+/* Utilización de Mixin */
+.title {
+  border: 2px ridge #a74190;
 }
 
 /*# sourceMappingURL=style.css.map */
