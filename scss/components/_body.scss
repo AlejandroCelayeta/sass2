@@ -1,5 +1,4 @@
 @import "../base/variables";
-
 /* Body */
 
 main {
@@ -19,67 +18,63 @@ main {
 	body {
 
 		@media only screen and (min-device-width : 480px) and (max-device-width : 1024px) {
-			* {
-				.menu {
-					background-color: $bg-color6;
-				}
 
+			.menu {
 				background-color: $bg-color6;
-				font-size: $font-medium;
-				font-weight: bolder;
-				color: $font-color2;
 			}
 
-			@media only screen and (min-device-width : 320px) and (max-device-width : 479px) {
-				* {
-					background-color: $bg-color6;
-					font-size: ($font-small);
-					font-weight: bolder;
-				}
-
-				/* Container Body */
-
-				.container {
-					p {
-						color: $font-color1;
-						font-size: $font-large;
-
-					}
-
-					box-sizing: content-box;
-					padding: 8px;
-					margin: 0%;
-					display: flex;
-					flex-direction: column;
-					align-items: center;
-					justify-self: center;
-					text-align: center;
-					width: 60%;
-					height: 100%;
-					padding-bottom: 10%;
-				}
-
-
-
-			}
-
-			/* Parámetros del body */
-
-			font-family: 'Fredoka One',
-			cursive;
-			font-family: 'Oswald',
-			sans-serif;
-			color: $font-color1;
-			text-align: center;
-			box-sizing: border-box;
-			justify-content: center;
-
-			a {
-				text-decoration: none;
-
-			}
+			background-color: $bg-color6;
+			font-size: $font-medium;
+			font-weight: bolder;
+			color: $font-color2;
 		}
 
+		@media only screen and (min-device-width : 320px) and (max-device-width : 479px) {
+			* {
+				background-color: $bg-color6;
+				font-size: $font-small;
+				font-weight: bolder;
+			}
+
+			.container {
+				p {
+					color: $font-color1;
+					font-size: $font-large;
+
+				}
+
+				box-sizing: content-box;
+				padding: 8px;
+				margin: 0%;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-self: center;
+				text-align: center;
+				width: 60%;
+				height: 100%;
+				padding-bottom: 10%;
+			}
+
+
+
+		}
+
+		/* Parámetros del body */
+
+		font-family: 'Fredoka One',
+		cursive;
+		font-family: 'Oswald',
+		sans-serif;
+		color: $font-color1;
+		text-align: center;
+		box-sizing: border-box;
+		justify-content: center;
+
+		a {
+			text-decoration: none;
+
+		}
 	}
 
 }

@@ -33,30 +33,27 @@ main {
   padding-right: 15%;
   padding-left: 15%;
 }
+main body {
+  /* Parámetros del body */
+  font-family: "Fredoka One", cursive;
+  font-family: "Oswald", sans-serif;
+  color: #0e0a0a;
+  text-align: center;
+  box-sizing: border-box;
+  justify-content: center;
+}
 @media only screen and (min-device-width: 480px) and (max-device-width: 1024px) {
   main body {
-    /* Parámetros del body */
-    font-family: "Fredoka One", cursive;
-    font-family: "Oswald", sans-serif;
-    color: #0e0a0a;
-    text-align: center;
-    box-sizing: border-box;
-    justify-content: center;
-  }
-  main body * {
     background-color: #00805a;
     font-size: 1em;
     font-weight: bolder;
     color: #0c4720;
   }
-  main body * .menu {
+  main body .menu {
     background-color: #00805a;
   }
 }
-@media only screen and (min-device-width: 480px) and (max-device-width: 1024px) and (min-device-width: 320px) and (max-device-width: 479px) {
-  main body {
-    /* Container Body */
-  }
+@media only screen and (min-device-width: 320px) and (max-device-width: 479px) {
   main body * {
     background-color: #00805a;
     font-size: 0.8em;
@@ -80,10 +77,8 @@ main {
     font-size: 1.2em;
   }
 }
-@media only screen and (min-device-width: 480px) and (max-device-width: 1024px) {
-  main body a {
-    text-decoration: none;
-  }
+main body a {
+  text-decoration: none;
 }
 
 /* Lista de colores de footer */
@@ -255,9 +250,8 @@ footer {
   display: flex;
   justify-content: space-between;
   grid-template-areas: 2;
-  width: 25vh;
+  width: 50%;
   vertical-align: center;
-  padding-left: 10%;
   height: auto;
   margin: 0%;
 }
