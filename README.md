@@ -16,7 +16,7 @@ Todo lo aprendido durante mi curso en Coder.
 
 Uso de Bootsrap, Sass, Extends, Maps, Mixing, Variables y Listas entre otras cosas.
 
-Mis agradecomientos muy especiales a mi profesor Nicolás Seguro y a mi tutora Wanda Catellani
+Mis agradecimientos muy especiales a mi profesor Nicolás Seguro y a mi tutora Wanda Catellani
 por transferirme sus conocimientos y apoyo incondicional para hacerlo prosible.
 
 Muchas gracias !
