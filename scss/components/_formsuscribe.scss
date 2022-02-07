@@ -6,35 +6,32 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	padding-top: 60%;
-}
+	padding-top: 20%;
 
+	.form-control {
+		&:hover {
+			background-color: map-get($bg, bgcolor-uno);
+		}
 
-.form-control {
-	&:hover {
-		background-color: map-get($bg, bgcolor-uno);
+		&:focus {
+			background-color: map-get($bg, bgcolor-dos);
+			font-weight: bolder;
+		}
 	}
 
-	&:focus {
-		background-color: map-get($bg, bgcolor-dos);
-		font-weight: bolder;
+	.form-control {
+		font-size: $font-medium;
+		color: $font-color5;
+		background-color: map-get($bg, bgcolor-tres);
 	}
-}
 
-.form-control {
-	font-size: $font-medium;
-	color: $font-color5;
-	background-color: map-get($bg, bgcolor-tres);
-}
+	.input-group-text {
+		align-items: center;
 
-.input-group-text {
-	align-items: center;
+	}
 
-}
-
-
-
-.btn-primary {
-	margin-top: 1em;
-	margin-bottom: 10em;
+	.btn-primary {
+		margin-top: 1em;
+		margin-bottom: 10em;
+	}
 }

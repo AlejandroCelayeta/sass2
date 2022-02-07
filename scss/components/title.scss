@@ -4,6 +4,12 @@
 /* Título */
 
 .title {
+    
+/* Utilización de Mixin */
+.title {
+
+    @include border-titulo(2px ridge $color7);
+}
 
     display: block;
     text-align: left;
@@ -14,8 +20,3 @@
     color: $color1;
 }
 
-/* Utilización de Mixin */
-.title {
-
-    @include border-titulo(2px ridge $color7);
-}

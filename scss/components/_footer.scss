@@ -5,107 +5,112 @@
 /*Propiedades del footer*/
 footer {
 	@extend %footer;
-}
 
-.p-seguir {
-	@media only screen and (min-device-width : 480px) and (max-device-width : 1024px) {
-		color: $font-color3;
+	.p-seguir {
+		@media only screen and (min-device-width : 480px) and (max-device-width : 1024px) {
+			color: $font-color3;
+		}
+
+		@media only screen and (min-device-width : 320px) and (max-device-width : 767px) {
+			color: $font-color4;
+
+		}
+
+
+		font-size: $font-medium;
+		font-weight: bold;
+		color: $font-color1;
+		padding-top: 10%;
+		padding-bottom: 0.5%;
+		padding-right: 10%;
+		margin-top: 10%;
+		margin: -5%;
+
+		&:hover {
+			transform: scale(1.1);
+			color: $color3;
+		}
 	}
 
-	@media only screen and (min-device-width : 320px) and (max-device-width : 767px) {
-		color: $font-color4;
+	.linkedin {
+		display: block;
+		margin-left: 0.5em;
+		margin-bottom: 0.6em;
+		padding-top: 0.2em;
+		width: 50px;
+		height: auto;
 
+		&:hover {
+			transition: 2.3s;
+			transform: rotate(360deg);
+		}
 	}
 
+	.facebook {
+		display: block;
+		margin-left: 0.5em;
+		margin-bottom: 0.2em;
+		padding: 0.2em;
+		width: 60px;
+		height: auto;
 
-	font-size: $font-medium;
-	font-weight: bold;
-	color: $font-color1;
-	padding-top: 10%;
-	padding-bottom: 0.5%;
-	padding-right: 10%;
-	margin-top: 10%;
-	margin: -5%;
-
-	&:hover {
-		transform: scale(1.1);
-		color: $color3;
-	}
-}
-
-.linkedin {
-	display: block;
-	margin-left: 0.5em;
-	margin-bottom: 0.6em;
-	padding-top: 0.2em;
-	width: 50px;
-	height: auto;
-
-	&:hover {
-		transition: 2.3s;
-		transform: rotate(360deg);
-	}
-}
-
-.facebook {
-	display: block;
-	margin-left: 0.5em;
-	margin-bottom: 0.2em;
-	padding: 0.2em;
-	width: 60px;
-	height: auto;
-
-	&:hover {
-		transition: 2.3s;
-		transform: rotate(360deg);
-	}
-}
-
-.parrafo-copy {
-	@media only screen and (min-device-width : 320px) and (max-device-width : 767px) {
-		color: $color3;
+		&:hover {
+			transition: 2.3s;
+			transform: rotate(360deg);
+		}
 	}
 
-	font-size: $font-small;
-	font-weight: bold;
-	color: $color1;
-	text-align: center;
-	padding-bottom: 0.1%;
-	padding: 0%;
-	margin-right: 11%;
-}
+	.parrafo-copy {
+		@media only screen and (min-device-width : 320px) and (max-device-width : 767px) {
+			color: $color3;
+		}
 
-.footer-redes {
-	.f-head {
-		margin: 0%;
-		padding-top: 15%;
+		font-size: $font-small;
+		font-weight: bold;
+		color: $color1;
 		text-align: center;
-		justify-self: center;
-		grid-area: a;
-	}
-
-	max-width: 100%;
-	display: grid;
-	grid-template-areas: 'a a'
-	'b c'
-	'd d';
-
-	.fb {
-		margin: 0%;
+		padding-bottom: 0.1%;
 		padding: 0%;
-		justify-self: center;
-		grid-area: b;
+		margin-right: 11%;
 	}
 
-	.ln {
-		justify-self: center;
-		grid-area: c;
+	.footer-redes {
+		background-color: nth($color-footer, 2);
+
+		.f-head {
+			margin: 0%;
+			padding-top: 15%;
+			text-align: center;
+			justify-self: center;
+			grid-area: a;
+		}
+
+		max-width: 100%;
+		display: grid;
+		grid-template-areas: 'a a'
+		'b c'
+		'd d';
+
+		.fb {
+			margin: 0%;
+			padding: 0%;
+			justify-self: center;
+			grid-area: b;
+		}
+
+		.ln {
+			justify-self: center;
+			grid-area: c;
+
+		}
+
+		.copy-r {
+			grid-area: d;
+			text-align: center;
+			margin-left: 10%;
+		}
 
 	}
 
-	.copy-r {
-		grid-area: d;
-		text-align: center;
-		margin-left: 10%;
-	}
+
 }
