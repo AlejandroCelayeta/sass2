@@ -3,6 +3,6 @@
 /* Extends */
 
 %footer {
-    background-color: $footer-color2;
-    border: grey solid 1px;
+    background-color: nth($color-footer, 2);
+    border:1px solid grey  ;
 }
